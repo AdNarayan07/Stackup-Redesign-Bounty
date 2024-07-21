@@ -78,5 +78,10 @@
       "objectID": "synonym16",
       "type": "synonym",
       "synonyms": ["JS", "JavaScript"]
+    },
+    {
+      "objectID": "synonym17",
+      "type": "synonym",
+      "synonyms": ["DBM", "Database Management"]
     }
   ]  
