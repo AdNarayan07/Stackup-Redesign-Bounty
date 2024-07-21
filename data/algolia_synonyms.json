@@ -1,0 +1,82 @@
+[
+    {
+      "objectID": "synonym1",
+      "type": "synonym",
+      "synonyms": ["AI", "Artificial Intelligence"]
+    },
+    {
+      "objectID": "synonym2",
+      "type": "synonym",
+      "synonyms": ["GCP", "Google Cloud Platform"]
+    },
+    {
+      "objectID": "synonym3",
+      "type": "synonym",
+      "synonyms": ["LLM", "Large Language Model"]
+    },
+    {
+      "objectID": "synonym4",
+      "type": "synonym",
+      "synonyms": ["LLMs", "Large Language Models"]
+    },
+    {
+      "objectID": "synonym5",
+      "type": "synonym",
+      "synonyms": ["ML", "Machine Learning"]
+    },
+    {
+      "objectID": "synonym6",
+      "type": "synonym",
+      "synonyms": ["API", "Application Programming Interface"]
+    },
+    {
+      "objectID": "synonym7",
+      "type": "synonym",
+      "synonyms": ["DB", "Database"]
+    },
+    {
+      "objectID": "synonym8",
+      "type": "synonym",
+      "synonyms": ["NFT", "Non-Fungible Token"]
+    },
+    {
+      "objectID": "synonym9",
+      "type": "synonym",
+      "synonyms": ["NFTs", "Non-Fungible Tokens"]
+    },
+    {
+      "objectID": "synonym10",
+      "type": "synonym",
+      "synonyms": ["ID", "Identifier"]
+    },
+    {
+      "objectID": "synonym11",
+      "type": "synonym",
+      "synonyms": ["SQL", "Structured Query Language"]
+    },
+    {
+      "objectID": "synonym12",
+      "type": "synonym",
+      "synonyms": ["DBMS", "Database Management System"]
+    },
+    {
+      "objectID": "synonym13",
+      "type": "synonym",
+      "synonyms": ["DApps", "Decentralized Applications"]
+    },
+    {
+      "objectID": "synonym14",
+      "type": "synonym",
+      "synonyms": ["HTML", "HyperText Markup Language"]
+    },
+    {
+      "objectID": "synonym15",
+      "type": "synonym",
+      "synonyms": ["CSS", "Cascading Style Sheets"]
+    },
+    {
+      "objectID": "synonym16",
+      "type": "synonym",
+      "synonyms": ["JS", "JavaScript"]
+    }
+  ]  
