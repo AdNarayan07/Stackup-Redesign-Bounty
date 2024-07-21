@@ -1,0 +1,169 @@
+html.dark body {
+    background-color: #111827;
+    color: white;
+}
+
+html.dark [multiple],
+html.dark [type=date],
+html.dark [type=datetime-local],
+html.dark [type=email],
+html.dark [type=month],
+html.dark [type=number],
+html.dark [type=password],
+html.dark [type=search],
+html.dark [type=tel],
+html.dark [type=text],
+html.dark [type=time],
+html.dark [type=url],
+html.dark [type=week],
+html.dark select,
+html.dark textarea {
+  background-color: black;
+}
+
+html.dark .bg-white, html.dark .bg-primary-bg {
+    background-color:#111827
+}
+
+html.dark .bg-grayscale-8, html.dark .bg-gray-100, html.dark .hover\:bg-grayscale-9:hover, html.dark .hover\:bg-grayscale-8:hover, html.dark .hover\:bg-gray-100:hover {
+    background-color:#374151
+}
+
+html.dark .bg-grayscale-9, html.dark .bg-\[\#B8B8B8\]{
+    background-color: #030012;
+}
+
+html.dark .bg-grayscale-10, html.dark .bg-grayscale-11, html.dark .hover\:bg-grayscale-5:hover {
+    background-color: #1f2937
+}
+
+html.dark .border-grayscale-8 {
+    border-color:#4b5563
+}
+
+html.dark .border-grayscale-9 {
+    border-color:#707d8f
+}
+
+html.dark .border-gray-300 {
+    border-color:#999999
+}
+
+html.dark .markdown-body a, html.dark .rich-text a {
+    color: #b42e2e;
+}
+
+html.dark .text-black {
+    color: white;
+}
+
+html.dark .text-grayscale-2 {
+    color: #c2c2c2;
+}
+
+html.dark .bg-green-100 {
+    background-color: #064e3b;
+}
+
+html.dark .text-green-800 {
+    color: #ecfdf5
+}
+
+html.dark .bg-yellow-100 {
+    background-color: #78350f;
+}
+
+html.dark .text-yellow-800 {
+    color: #fffbeb
+}
+
+html.dark .bg-gray-100 {
+    background-color: #374151;
+}
+
+html.dark .text-gray-900 {
+    color: #f9fafb
+}
+
+html.dark .bg-red-100 {
+    background-color: #430000;
+}
+
+html.dark .bg-red-50 {
+    background-color: #240000;
+}
+
+html.dark .text-red-800 {
+    color: #ffe7e7
+}
+
+html.dark .bg-blue-10 {
+    background-color: #002145;
+}
+
+html.dark .text-blue-1 {
+    color: #e2f0ff
+}
+
+html.dark .bg-orange-50 {
+    background-color: #211200;
+}
+
+html.dark .text-orange-800 {
+    color: #fffaf8;
+}
+
+html.dark .bg-flash-danger-surface {
+    background-color: #370a0a;
+}
+
+html.dark .text-flash-danger-text {
+    color: #b0a7a7;
+}
+
+html.dark .border-flash-danger-border{
+    border-color: #240000;
+}
+
+html.dark .lg\:text-grayscale-2, html.dark .text-grayscale-4 {
+    color: #c2c2c2
+}
+
+html.dark path[fill] {
+    fill: #aaaaaa !important;
+}
+
+html.dark path[fill="#1F2A37"] {
+    fill: white !important;
+}
+
+html.dark path[stroke] {
+    stroke: #aaaaaa !important;
+}
+
+html.dark .markdown-body code, html.dark .markdown-body pre, html.dark .rich-text code, html.dark .rich-text pre{
+    background-color: #020013;
+}
+
+html.dark code.inline-code {
+    background-color: #4a4a4a75;
+    color: #ff5353
+}
+
+
+html.dark .toggle-option[checked]{
+    background-color: #000c16;
+  }
+
+html.dark ::-webkit-scrollbar {
+    background-color: #0000;
+    width: 4px;
+    height: 4px;
+  }
+html.dark ::-webkit-scrollbar-thumb {
+    background-color: #535353a2;
+    border-radius: 2px;
+  }
+html.dark ::-webkit-scrollbar-corner {
+    background-color: #0000;
+  }

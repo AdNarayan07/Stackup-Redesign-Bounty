@@ -1,0 +1,23 @@
+
+.toggle-option[checked]{
+    background-color: #cbcbcb
+  }
+  div:has(.toggle-option#ongoing[checked]) ~ #content-ongoing {
+    display: block !important;
+  }
+  div:has(.toggle-option#past[checked]) ~ #content-past {
+    display: block !important;
+  }
+  #past[checked] ~ .relative {
+    display: block !important;
+  }
+  .toggle-option{
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .toggle-option:hover{
+    outline: 1px solid;
+  }
+  #filter:hover > div {
+    display: block;
+  }

@@ -1,0 +1,212 @@
+[
+    {
+        "title": "Developing Web Applications with Flask",
+        "url": "/campaigns/developing-web-applications-with-flask",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtWmpreU9EUXlZeTAyWkdSbUxUUXhOVFl0T1RrNU1DMWpNMkUxTVRFd01XUTJabU1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--a5916999b472f3948093c1c0be6dbd75115ffeb2/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/SU_Developing%20Web%20Applications%20with%20Flask.png",
+        "objectID": 1
+    },
+    {
+        "title": "3D Web Design with ThreeJS",
+        "url": "/campaigns/3d-web-design-with-threejs",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt4TWpNd05tUXhPQzB4TWpNMUxUUTVaV0V0T1dSbE5TMDFOVGd4TXpjek1ESm1OR1VHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--eae1851e0a5aa3dd5aac9bc71a5d1215cb8568ce/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/SU_3D%20WebDesign%20With%20ThreeJS.png",
+        "objectID": 2
+    },
+    {
+        "title": "Building an API Client Library with Rust I",
+        "url": "/campaigns/building-an-api-client-library-with-rust-i",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt4Wm1ObE5UWm1aaTB4WXpVMExUUm1Namt0WVRKa1lpMDNOR1ZpWWpZM1pESTFOR1FHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--47168e9977f3926dbce00f0450a5951eecae48fc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/SU_Building%20an%20API%20Client%20Library%20with%20Rust%20I.png",
+        "objectID": 3
+    },
+    {
+        "title": "Developing an API Server with FastAPI",
+        "url": "/campaigns/developing-an-api-server-with-fastapi",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtWlRWallqZzFNQzAyTXprMExUUTRZek10WWpjNFlTMHpaREkwTlRFME1UTTBNakVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--23063aaff0f4b937b3b17eccb4036d6ac0a648ca/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/SU_Developing%20an%20API%20Sever%20with%20FastAPI%20(1).png",
+        "objectID": 4
+    },
+    {
+        "title": "Getting Your Hands Dirty With Rust",
+        "url": "/campaigns/getting-your-hands-dirty-with-rust",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6WldGbU1qRXpNeTFsT0dZMkxUUmtaamd0WW1JM1lTMDVNR0l6TXpBNVpUTTVOekVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--14b1cd96773560dc8b4550a54d77db56d1abd760/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/SU_Rust_31st%20May.png",
+        "objectID": 5
+    },
+    {
+        "title": "Introduction to Back-End Development with  NodeJS Part 2",
+        "url": "/campaigns/introduction-to-back-end-development-with-nodejs-part-2",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswTkRNME1tSmlZeTFrTXpFMkxUUmhOall0WVROaE5pMWlaak5tTlRBNFpEWTJZemtHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--d3cee2f5664c85fe47ead4b6a1d87d2cc96d815b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/SU_NodeJS%20II_24%20May.png",
+        "objectID": 6
+    },
+    {
+        "title": "Move on Aptos II",
+        "url": "/campaigns/move-on-aptos-ii",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6TXpNeU9UaGhOUzA1WkRZeUxUUXhPVFl0T1RSa055MWtaamsyWWpGaE1UUm1aak1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--8b3fe7bc46ce360c3541d6147e060139e6fd51c0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Aptos%20L&E%20KV%202%20-%20StackUp%20Platform.png",
+        "objectID": 7
+    },
+    {
+        "title": "Beyond the Basics: Advancing in Linera  Microchains",
+        "url": "/campaigns/beyond-the-basics-advancing-in-linera-microchains",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt4WkdKak5tVmxOQzFpT0RBNExUUTBaVEF0T0dVMFl5MDROREE0WkRobU9HRmlaRGNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--72ec229988f21a939c13d7d2c72bdc9389958093/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Linera%20x%20StackUp_SU%20Platform%20(1).png",
+        "objectID": 8
+    },
+    {
+        "title": "hackglobal 2024: Virtual Bounty Season 1",
+        "url": "/campaigns/hackglobal-2024-virtual-bounty-season-1-e0f5",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtTXpkaVl6aGxNUzA1TVRkbExUUXdZamt0T1dJNVlTMDVZekk0TkRRM1l6QXlNbU1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--9ebe6e07d1de0874d3f298ca8667a6f073681e9a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/hackvirtualS1_SUVer_Updated.png",
+        "objectID": 9
+    },
+    {
+        "title": "Innovating with MongoDB Atlas Vector Search",
+        "url": "/campaigns/innovating-with-mongodb-atlas-vector-search",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs0TVdabE1UWXpNaTAzWVdNNUxUUXlORGN0T1RnMU55MDNOVEk0TldFNU5EaGpZV0lHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--d1a3fce78592b3e7216be2bb61092fb99a11da99/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/MongoDB%20x%20StackUp%20KV_SU%20Platform.png",
+        "objectID": 10
+    },
+    {
+        "title": "Empower Your Developer Journey with Rust",
+        "url": "/campaigns/empower-your-developer-journey-with-rust",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswTkdZNFlqTmlOeTAyTlRJMExUUm1aV010T0ROak5TMHpPVGRsWVdabE1XUmxOVGtHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--bac055867ae08a7d482ebc3b861dd4b9cc695bbd/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/26%20April_Empower%20Your%20Developer%20Journey%20With%20Rust.png",
+        "objectID": 11
+    },
+    {
+        "title": "Simplify Building on the Blockchain with  Circle and USDC",
+        "url": "/campaigns/simplify-building-on-the-blockchain-with-circle-and-usdc",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxsTVdGaE1HRXlOaTB6WkRRNExUUmpOakV0T1daak1TMDFNV1JsWTJGaU16STRNVFlHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--d37d10f524875b963421803975a7458216fbbdb0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Circle%20-%20Bounty%201_SU%20Platform.png",
+        "objectID": 12
+    },
+    {
+        "title": "Introducing Linera Microchains on Rust",
+        "url": "/campaigns/introducing-linera-microchains-on-rust",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxsTlRobFlUTXdZUzFsT0RCaExUUmtOalV0T0dOaE55MWxaalF4TmpGaU5UZ3dZbVFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--492e4417b7b66dd9d50c1ced5d01eefccb7d4a3f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Linera%20x%20StackUp_SU%20Platform.png",
+        "objectID": 13
+    },
+    {
+        "title": "Getting Started with USDC and Programmable  Wallets Run 2",
+        "url": "/campaigns/getting-started-with-usdc-and-programmable-wallets-run-2",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxWkRWaU0yUmlPQzFpT1dVNUxUUTFZbVF0WVRnMllpMDVaRFZoWmpZNFltSmhNR0lHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--93d2bec4b9a525a4cc6077b3a69285710de806cb/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Circle%20-%20Programmable%20Wallets%20Run%202_SU%20Platform_Run%202.png",
+        "objectID": 14
+    },
+    {
+        "title": "Move on Aptos I",
+        "url": "/campaigns/move-on-aptos-i",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxsWmpZM1ptWTJPUzB5TkRjekxUUXdObUl0T1dRM05DMWxNbVZtWldSa09ETm1Nek1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--25d4ff54c1ed447aefcd8c3afc71e1325c8ace29/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Aptos%20L&E%20KV%20-%20StackUp%20Platform.png",
+        "objectID": 15
+    },
+    {
+        "title": "Decentralized IDentity & Staking with  Ontology II",
+        "url": "/campaigns/decentralized-identity-and-staking-with-ontology-ii",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs0WXpsaE1HUTJPQzB5WWpRMUxUUmxNMlV0T0dZMk15MWpZV1ExTW1Wa1pUZG1NekVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--e09f3f1eacf6cba869977c1e686314cf5af9e49d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Ontology%20x%20StackUp%20StackUp.png",
+        "objectID": 16
+    },
+    {
+        "title": "Elevating NFTs with ZetaChain: Omnichain  NFTs",
+        "url": "/campaigns/elevating-nfts-with-zetachain-omnichain-nfts",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxWXprMlpHWTROaTA0TUdFeUxUUmxNelV0WVRnNE1pMDNObVU0WVRabVptRTJaVFVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--4f8e7d13d435e8d873f98b11254e25d220ca1fe2/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/ZetaChain%20StackUp%20Platform_V3%20(1).png",
+        "objectID": 17
+    },
+    {
+        "title": "Embark On Your aelf Journey",
+        "url": "/campaigns/embark-on-your-aelf-journey",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt4TjJOaE5EbG1OeTFoTkdKakxUUmlNRFl0T0dVME1TMWlNR1V5T1RRellUTXhOak1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--a13b325654ef471b7efce11dc1c547c23665e732/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/aelf%20x%20StackUp%20KV_SU%20Platform.png",
+        "objectID": 18
+    },
+    {
+        "title": "Introduction to Starknet and Cairo",
+        "url": "/campaigns/introduction-to-starknet-and-cairo",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6WlRZeU5qRmhNaTB5TlRFMUxUUTJNV1l0WWpNek9DMDJNamxqT0dNNE5qTXlZekVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--99b19f9043164c847fc66dd1753701a1734e7070/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/INT_%20Starknet%20&%20Cairo%20Campaign.png",
+        "objectID": 19
+    },
+    {
+        "title": "Seamless Cross-Chain Messaging with  ZetaChain",
+        "url": "/campaigns/seamless-cross-chain-messaging-with-zetachain",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt3TUdOa05qUTNZaTFoT0RObExUUTFPR1V0T0dRMllpMHlOVGRpWlRBMlptSXhOalVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--052b8d467301d042d9f48e98151fd6dc2e98ce22/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/ZetaChain%20StackUp.png",
+        "objectID": 20
+    },
+    {
+        "title": "Build Decentralised Identities with Affinidi",
+        "url": "/campaigns/build-decentralised-identities-with-affinidi",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxrTmpSbVlUSXdOaTA0WkdNd0xUUTBPR1F0T1dGbE9TMHdaV014TjJNMU56VXlZVElHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--94720bb9c3701c7613482f993223e7980e7e9a6e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Affinidi%20X%20SU_Title%202.png",
+        "objectID": 21
+    },
+    {
+        "title": "Decentralized IDentity & Staking with  Ontology",
+        "url": "/campaigns/decentralized-identity-and-staking-with-ontology",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxqTkRZMFlUQTRaUzA0WXpVekxUUm1OREF0WVdVM1lpMWtaamt6WmpNM01UTTJOelVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--7eb84bbcc79fa4e248d7e8d572f5b5873341cbf0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Ontology%20x%20StackUp%20StackUp.png",
+        "objectID": 22
+    },
+    {
+        "title": "Advancing in Sui: Beyond the Basics",
+        "url": "/campaigns/advancing-in-sui-beyond-the-basics",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt5WW1RMFl6RTRPUzFqTkdZd0xUUTRabVl0T0dNNU1DMDRZakF5TUdGa01EazBNR1lHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--b4bf84573b23ab9974cc86ef03fcb9fa3147dc7c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/StackUp%20Platform%20Sui2.png",
+        "objectID": 23
+    },
+    {
+        "title": "Omnichain Staking Unleashed with ZetaChain",
+        "url": "/campaigns/omnichain-staking-unleashed-with-zetachain",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxsTURKak5EbGhNUzFsT1RjekxUUm1NVEV0WWpkaU9TMDNaVFUwTnpBMU1HVTFOR01HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--a47c49c06b947e70edae2cf72ccca9b089c840ed/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/ZetaChain_CP%20Platform_V2.png",
+        "objectID": 24
+    },
+    {
+        "title": "Introduction to Back-End Development with  NodeJS",
+        "url": "/campaigns/introduction-to-back-end-development-with-nodejs",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs0TUdKbU9UWmxOQzB6TURsbExUUTNORGt0WVRnMFpTMDBaR1k1TXpKbE9UQXpOV1VHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--1ab71fc35638b2b1537c53959f35a4f1253864c7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/29%20Dec%2023%20-%20NodeJS%20I.png",
+        "objectID": 25
+    },
+    {
+        "title": "AI/ML with Python: Web Scraping &  Sentiment Analysis",
+        "url": "/campaigns/ai-slash-ml-with-python-web-scraping-and-sentiment-analysis",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsyWm1WbU5tVmtOUzAxTVdZM0xUUXdZV1l0T0dOaE1pMHhNRGhoTlRNNE0yUXlaaklHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--b6bc820f34f32fb90c4d480467d9ea1de4a8c2ce/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/ML%20with%20Python_%20Web%20Scraping%20&%20Sentiment%20Analysis.png",
+        "objectID": 26
+    },
+    {
+        "title": "Gamer Onboarding with Immutable Passport",
+        "url": "/campaigns/gamer-onboarding-with-immutable-passport",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswTnpoaVlqWmxOQzFqT1RCakxUUmlZMlV0T1RKalpTMDVNRGxrTVRBeE1EUXlabU1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--8e54ff076b537aa967af8c53f5ea609efc9df28a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Immutable%20x%20StackUp_Campus_V1.png",
+        "objectID": 27
+    },
+    {
+        "title": "Learn to Future-proof DApps with ZetaChain",
+        "url": "/campaigns/learn-to-future-proof-dapps-with-zetachain",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtWW1ZNE1EVTFNaTA1WkRRM0xUUXdPV010WVRoa1lpMWxOMlprWkdabE5HRmxOV0VHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--97b63ac8cdb96b2089128c1c5636b81a360282e1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/ZetaChain_CP%20Platform_V2.png",
+        "objectID": 28
+    },
+    {
+        "title": "SQL Intermediate",
+        "url": "/campaigns/sql-intermediate",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxpTkRrM05HRmxaaTAwTlRnNExUUTBaRGN0T0dJME9DMHhPRE5oTUdSaE5qTmtNbVVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--91b6201fa885020cac608df363fd96b85d605d1a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/24%20November_SQL%20Intermediate.png",
+        "objectID": 29
+    },
+    {
+        "title": "Code with Cody AI",
+        "url": "/campaigns/code-with-cody-ai",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxTlRnNE4yWTJOQzAwWlRJeExUUTJNelV0WWpOaFlTMDBPV1E0TkRFMVl6QmxNREFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--0315bea4116fc281407c861379f992be935094af/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/cody_banner.png",
+        "objectID": 30
+    },
+    {
+        "title": "Token Standards Masterclass - ERC1155",
+        "url": "/campaigns/token-standards-masterclass-erc1155",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxoWVRnNVpUTXlNQzAxTTJabExUUXlOekV0T0RVM1pDMW1OV1UxTjJFM01EZ3dZbVlHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--f87d0d26349255faab78f79900f65c9bcd1c3316/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/17%20October%20Token%20Standards%20Masterclass%20-%20ERC1155.png",
+        "objectID": 31
+    },
+    {
+        "title": "Towards Wallet Solutions in Web3",
+        "url": "/campaigns/towards-wallet-solutions-in-web3",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs0WkRCaU5HSTJZeTB3WXpFMkxUUmxObUl0T0dNeE9DMWpaRFl6WlRVelpHWXpaVFlHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--ad89943db445ff64883f3439e32858c612427e06/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/19%20July_Towards%20Wallet%20Solutions%20in%20Web%203.png",
+        "objectID": 32
+    },
+    {
+        "title": "GCP-Powered AI Solutions for Building on aelf",
+        "url": "/campaigns/gcp-powered-ai-solutions-for-building-on-aelf-9d02",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt3TUdRek1tSTVZeTAyWTJaaUxUUXpZMk10WVRnNVpDMW1aakV6TW1VMk5tRTFORFFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--01f23bc3818752a9c2b2d152b2af5d02d948ebbb/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/Google%20Cloud%20x%20StackUp_SU%20Platform.png",
+        "objectID": 33
+    },
+    {
+        "title": "hackglobal 2024: Virtual Bounty Season 2",
+        "url": "/campaigns/hackglobal-2024-virtual-bounty-season-2",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxWlRRek5XRXhNQzB3WW1KbUxUUXdPVFl0WVRRek1TMDFNelJtTm1WaU5tWXhabVVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--29d33455719288020c2e74eb78432ba1e2087bfe/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/hackvirtualS2_SUVer_Updated.png",
+        "objectID": 34
+    },
+    {
+        "title": "Solidity Advanced Skills #1",
+        "url": "/campaigns/solidity-advanced-skills-number-1",
+        "imageUrl": "https://earn.stackup.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxpTURSaVpUWmlNQzA0T1RVMkxUUmlORFV0T1dOaE55MHlOVGN5TVRRNU5HVXlPVEVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--b523730de6fc20089eacfc712f4cf11078ac5ce7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMZ0FXa0I4QT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a63f268dd0ebd536be8e937745381e5e2f033dea/SU_Solidity%20Advanced%20Skills.png",
+        "objectID": 35
+    }
+]

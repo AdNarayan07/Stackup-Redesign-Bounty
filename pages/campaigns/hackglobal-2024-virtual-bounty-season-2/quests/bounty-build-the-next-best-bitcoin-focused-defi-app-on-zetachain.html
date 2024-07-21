@@ -1,0 +1,753 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earn</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Y-eZ27EV73W8CYqgR2Vn1JSVkksCPfq79ZEizX7FtB5qc9-ecsCDOVK-EuIWq-v27F_e9KxYkKJV1p8Zzq_XYw" />
+    
+    <meta name="honeybadger-api-key" content="hbp_cNwxNo1IBsgAllwHYllzwn3ElCmi7o2glTun" /><meta name="honeybadger-environment" content="prod" /><meta name="honeybadger-revision" /><meta name="honeybadger-user-id" content="bcc36dd7-47a9-4929-8f68-2da3cccafc35" />
+    <link rel="stylesheet" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/tailwind-web-4b15b08665d5b314aec42d169f96e6dcc39f112ed3f3eb95172c145164015e54.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/application-0a79d855b55a5820b2bc28bdb1b971f97f0fad91c48cf25ac78ebb122e5acb4f.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="/styles/tailwind.min.css" />
+    <link rel="stylesheet" href="/styles/toggle-button.css" />
+    <link rel="stylesheet" href="/styles/dark.css" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "@rails/request.js": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/requestjs-c7150df01ef8f2501194fdc0acfaa04747b98cf4295882aece676b4235edc075.js",
+    "application": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/application-7ffb6b67deaf07e50fae3ed73c64362929f7717222e9af66cebd8f2a569d97ab.js",
+    "@hotwired/turbo-rails": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/turbo.min-16e688b3ebc047bfacf87e521e8a9b8db569f22d864a686a0736bd560b26b2d8.js",
+    "@hotwired/stimulus": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@hotwired--stimulus-379f09adbcd004e5b2c2793635d128b6e72c08d1ef5337bf8a5d1e260aaa403e.js",
+    "@hotwired/stimulus-loading": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+    "utils/helper": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/utils/helper-ca114e436f78dc8891e8a01177da72671652582391a79ed68fe7e9d944526c6f.js",
+    "@rails/activestorage": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@rails--activestorage-5c8d84ec504a53ac574def28e80b50a2b9a1e2b8fcb65e75cea0887a9212ddd8.js",
+    "stimulus-animated-number": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-animated-number-020f8f5d3fb4c593f118d4f7ccff05fc1f8a31fef22bb2887fcc9e126c58d1c1.js",
+    "stimulus-reveal-controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-reveal-controller-e4715d1fbfde10302aff1b43091b05aa1cc5a8c33d0699fecc4575b38b28bd33.js",
+    "stimulus-clipboard": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-clipboard-bc91e4c1cd48c7946004409934a9c8f1980776eda7ba962764ad392d8d0ed17b.js",
+    "stimulus-multiselect": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-multiselect-67b00de6875f970c89eaaae0b1a62b51b33edbd4ef482d31f11c408b7157d49e.js",
+    "stimulus-scroll-to": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-scroll-to-f674996091cb0f0c9c918919712b3b1b937848b7a3223d8993b5e8356ebb391d.js",
+    "stimulus-carousel": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-carousel-be699975558ea256db58640b04248232795c62985ac412267098666a9630b31e.js",
+    "ssr-window": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/ssr-window-4fe7d3ba9c5f99c9cabd56d1f850db5e1ac465d9f4b55e9270fd14c8055f5f76.js",
+    "swiper/bundle": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper--bundle-a59bc15a2e9b1194c209e225f99a00b794ae7fce9c624b1904076dc5e0e3ff59.js",
+    "swiper-bundle/q_Dmumbx": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper-bundle/q_Dmumbx-744d64e5cb5cf6e1c7e7b9cf8f2bdb07c4b8d3f6049a1e65b85135cf3129b3b8.js",
+    "swiper-bundle/u9_e3QsJ": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper-bundle/u9_e3QsJ-6ff04a09f7618927bcd4015ffa1e7d283c5cad60b789c3f95f9b5885d0717583.js",
+    "swiper-bundle/aUCo-AuJ": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper-bundle/aUCo-AuJ-2e56ecb39bad13b69d41d2460f425048e953a63e8b2a5c5ef59ae5730dc7df29.js",
+    "sortablejs": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/sortablejs-df5ea22b27dc8daf7aefda9f5b803f797c3b40d1eb3d8fcb8eebfb44e9a9c4ad.js",
+    "@honeybadger-io/js": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@honeybadger-io--js-94460d64db4c055b29fa8e20ea43989303e461308c64fceeaa9a9033462c31c8.js",
+    "@editorjs/editorjs": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--editorjs-add75ff66c39b34b07921cfe241f809eb008ca067137586ccbd2bf34c3f632e9.js",
+    "@editorjs/header": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--header-54bb0b2deaf47906922ae0ff661246736005c45109b065b593051ac8dbb3497f.js",
+    "@editorjs/quote": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--quote-a7d5df42c8e1d51b3f429c7aadefbb43ebe778cae960d130527f0f6a62c4a787.js",
+    "@editorjs/embed": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--embed-c9f3d5bb6b70e087b05cfc09e8b6fd5e6578cb952d7d433fb3b07cf2d03f749c.js",
+    "@editorjs/marker": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--marker-e563de94c70d27b88d1d9631723a4c9c8917db501169e1ffade5957f6294bb0f.js",
+    "@editorjs/underline": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--underline-fa70a67a8f5ae70c7dd252717a17471c7d2e95b5b6eed60d832301123c343245.js",
+    "editorjs-html": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/editorjs-html-86248f600ce08990eda19a1c91a1c609a3147ea95cb0628cf999cc21728f2e2c.js",
+    "@editorjs/list": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--list-9c9bac9cefa18aebaaeeebfd83e790b3d1bca9e38e688715fde3eeaf301092d6.js",
+    "@editorjs/nested-list": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--nested-list-7e03bc08ec42b4f44dd0d2e6bf0a6505442490ce517ac0a83d0b42fb2c396957.js",
+    "@editorjs/raw": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--raw-4c618c32d89a45815ede7320444d9bb41608bd055040a809fee701e884083872.js",
+    "@editorjs/inline-code": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--inline-code-a4c5eac60c88c4e277dd2927ad6c7e6ce888ec1940f9eddf6b5cd864dbc3a692.js",
+    "@editorjs/simple-image": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--simple-image-e3054be8332980cf6ab47855446c38eeaad32257fefbe6ea60fde8b1ec3fc5b1.js",
+    "@editorjs/image": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--image-aecb5878cd3ebaa74141426f88cad25c9f3761ede0830a86a2978496c3ca577e.js",
+    "editorjs-text-color-plugin": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/editorjs-text-color-plugin-cd7b57c4060603fc13c4a04cdfc6967228bde74909bb5707383e72e2ce54ca46.js",
+    "editorjs-codeflask@main": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/editorjs-codeflask@main-e0aa077ab1b095b6860bf63ae3de9b6af37bb915d9bd698d3a506950077cc34a.js",
+    "stimulus-dropdown": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-dropdown-c22aa432c058a134a0fcd4dfd4cdaf627a67b13b47000c246b959c8811e457b5.js",
+    "hotkeys-js": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/hotkeys-js-496b2fb9b0b39a0cc43549f576f20d13e15e9ceb18cc316d7fe1fcfe242715f1.js",
+    "stimulus-use": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-use-8b0ae74337c38828f34f74e6e7a8eef10090e122ab782d33db0efbec84f3d6d4.js",
+    "prismjs": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs-a128eea38b363badd3291275b8dc8ea20e5b7c856d80cac0963963c707cfb8f8.js",
+    "prismjs/plugins/line-numbers/prism-line-numbers": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--line-numbers--prism-line-numbers-54b2ea6b93174a6f0e395259e7b81677dae2b690dd8a8e78bb57c9516bb26848.js",
+    "prismjs/plugins/toolbar/prism-toolbar": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--toolbar--prism-toolbar-bd96e12a89c91c3335c90863ad85bc704d5d766382989dfda21b005528d9b0ec.js",
+    "prismjs/plugins/show-language/prism-show-language": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--show-language--prism-show-language-1ae70e19b14d2c31d91de6af2ff7d781c632da5d2be20592e6bdf462732fb860.js",
+    "prismjs/plugins/autoloader": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--autoloader--prism-autoloader.min.js-1dd99a8498777499aa00ecb35a7182bea97eb7be9cd88d25516a42cd664fd683.js",
+    "prismjs/components/prism-groovy": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-groovy-1dd3f9f9a506f7792486a654e1ef8fe0c9cebb8873319115c8894f849df10c51.js",
+    "prismjs/components/prism-yaml": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-yaml-4bed01bc2550f473059ac61ef9dc763b70d9e10f02f6f426c282ed8bf2f87792.js",
+    "prismjs/components/prism-git": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-git-87e2efad35f6d7ad28760acad7789c90f414e092a8f207cf49dccf11a5611485.js",
+    "prismjs/components/prism-mongodb": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-mongodb-cd2e52bd7b15134245a2b4e651c8d0e42ef54ac5e3f327bdfb9d7c778487e2e8.js",
+    "prismjs/components/prism-typescript": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-typescript-85c1e49b8450f67591b3c5e5633d5477a616c024da771133748a75948ceccce8.js",
+    "prismjs/components/prism-jsx": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-jsx-0a66b78816919142cba29f4a9934a99023b6a99bfa3438bbee63c2aff460c8f8.js",
+    "prismjs/components/prism-tsx": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-tsx-189c9ef290c4aacf9829f57a666b42348751e64562e222539943b4185d590e06.js",
+    "prismjs/components/prism-regex": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-regex-a1381f9a8566c896a203171411fd8cdbce2e0e4d27da9775d981d508761ffd51.js",
+    "prismjs/components/prism-scss": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-scss-5564901b359c232b7614f1d1da652c3c9c92c7861726bc08cab90306f5e6e12a.js",
+    "prismjs/components/prism-matlab": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-matlab-28d2ccc02e9ce9038f0607c49e9e44789d2f3f74c816284e17493d38bc27407b.js",
+    "prismjs/components/prism-r": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-r-69c917f1e6ad93680312b2441467654796936e5387cd3ff4dfe5031a1702cb40.js",
+    "prismjs/components/prism-rust": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-rust-0c0a0396de8818e245682e75f174693c2347212f9b3b5b191e50aa38e86e3185.js",
+    "prismjs/components/prism-solidity": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-solidity-92bdd3cde9dfe3dc288fed3a5895c748a4ad88b70f770ea036aa87e1ac27685d.js",
+    "prismjs/components/prism-sql": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-sql-5506064463b8c66c086660f6062b739c6c1ad64d1629abab24b6d2bcf9defb34.js",
+    "prismjs/components/prism-wasm": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-wasm-fcc38bccc8c72cbba6835c25d9ceba2a9363376a3ba62efc482ef630a7a48b1a.js",
+    "prismjs/components/prism-docker": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-docker-e37b50495a42874dc207d61f32b507df6d8428a5315b8d0b1a8e478da12f1fb2.js",
+    "prismjs/components/prism-graphql": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-graphql-eb4abd5293cd97a7151c8bda2112e45f6a84d5056f6234a4a76e2e1075e846db.js",
+    "prismjs/components/prism-makefile": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-makefile-d059d6fddcc9ec428538918cb8e670ab9bef8a6aae16763f510a551ca61bc872.js",
+    "prismjs/components/prism-markdown": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-markdown-87065b622100365afe2b8d9b04727f324d65e74f39d9df8c24125b8d7ecb604f.js",
+    "prismjs/components/prism-json": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-json-b353eafcd973025043f7e7d226b44a42fe675aac8e51c263b98261228f1ae051.js",
+    "prismjs/components/prism-python": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-python-3e6a58bf00207cf83ce97a652f2deff4cbbfe75409184210a1d244aae0d319dc.js",
+    "prismjs/components/prism-protobuf": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-protobuf-80f7eb35bc3f250f03be6e853980ba6a9a82f4f0141ce9bbaa8b728faad8796d.js",
+    "prismjs/components/prism-csharp": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-python-3e6a58bf00207cf83ce97a652f2deff4cbbfe75409184210a1d244aae0d319dc.js",
+    "stackup_bridge/current_location": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stackup_bridge/current_location-744f2ed2e240424bf914465ff3fe735ddfd0a9ee2d0a3f64a39073d878626bfa.js",
+    "stackup_bridge/provisioning_redirect": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stackup_bridge/provisioning_redirect-7b3fcb57e3e6bc16826db1a5a0806667b66142550ee8478e3ccbc184d4936f55.js",
+    "stackup_bridge/stackup_bridge_utils": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stackup_bridge/stackup_bridge_utils-91ca7208f3a598c9cbbb996d4d675990d6992f2f5bce5c44b38396d0ff943aa2.js",
+    "controllers/anchor_to_scroll_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/anchor_to_scroll_controller-e9e53ddb16ca1d6996b5d56c1a4aab6bed80947c098080eacda2f94f233c1b8b.js",
+    "controllers/application": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/application-97f13946d3892b4b51e252cdb87dbd96af7484a464b8e58f07679045cf663af2.js",
+    "controllers/auto_perform_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/auto_perform_controller-4caff5b39b0470dcdbf675abc70c27e7dcda2252eca9a4bdfa2a068015dc526c.js",
+    "controllers/back_to_top_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/back_to_top_controller-ea95a34ae346d4ec3f1281c7e855ed56f0bef47a040f7fefa7bd7a1726661c77.js",
+    "controllers/character_counter_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/character_counter_controller-6292a9b369a23f3d8bff296a3d0d619dd3e8a0e1c725aaa607b69b00873b66c1.js",
+    "controllers/countdown_second_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/countdown_second_controller-c3a43bf6d82edba62106e4dfe3357f0177e812e638b2022cbfd4e3a03ade9cd1.js",
+    "controllers/countdown_timer_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/countdown_timer_controller-650f1797ff92df19e5ab31b41ccafd8c36a76313c44d0cc8e1d0bd696e6c24d9.js",
+    "controllers/country_select_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/country_select_controller-c4f88659fd2fbb86b7d75edf7835c663919233ce68b580abb9ced27ebc79a079.js",
+    "controllers/detect_input_change_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/detect_input_change_controller-e61bcd89c71562fae65dacda8a37fe57370134f96d0077c51ee90b2cb07c6b6f.js",
+    "controllers/direct_upload_input_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/direct_upload_input_controller-9d019a7330514d30bc56b616fa364c55d18936af03fdd84bc6e62e6766b9c2be.js",
+    "controllers/dirty_form_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/dirty_form_controller-4d89f1ca08b2f0f8a347699575b4eebdc8636ee64229046a3f620cf197e33012.js",
+    "controllers/drawer_transition_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/drawer_transition_controller-d4fde7d5d3e48737b8f514325b51161b217bf2ce981f1266e2e02a4deb4e545e.js",
+    "controllers/editable_field_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/editable_field_controller-0da78ff712f6bb3ef69f6d37f661125171ae3e060205b14cf7c46d02986ca305.js",
+    "controllers/editor_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/editor_controller-a03faf32f1379360840ae169d5790d8490f09c068ce84a6eae28c54cf323d18c.js",
+    "controllers/expand_all_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/expand_all_controller-39a5b6e44134ab75c97517175b39d100a8223f34b6e9745e379057e5e54349ae.js",
+    "controllers/flash_dispatch_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/flash_dispatch_controller-47dd6f8d022cdd139f8233e7ee8b0df5269649db105b75f4041312b98f21b679.js",
+    "controllers/form_submission_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/form_submission_controller-e333bcf213eecdead8fb9c23e4a82705c8d39385af0f0d7f3da2601a78648576.js",
+    "controllers/frame_missing_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/frame_missing_controller-64b4bced332b2b34753fc9f99d39b642cdde9faddbc127f9ebbbcdc8acc15511.js",
+    "controllers/highlight_item_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/highlight_item_controller-19d1b7901e22140217a9b361f0db20e6af7ff7048cef63e6f5db989da1c68135.js",
+    "controllers/image_input_preview_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/image_input_preview_controller-f16448faa12d1f96b00de885dde766557fd76896b85f78571e3e66efca0fcd6e.js",
+    "controllers/in_place_editable_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/in_place_editable_controller-28aff9027f32fd5972185f73f007b4f1cd69484c5e1859e9bf45e7a1b31c4c1c.js",
+    "controllers": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/index-6ca991861f21ae0578905e2740e8c80db8c35c9d2d9d08a9e9d86c10217c9854.js",
+    "controllers/inline_flash_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/inline_flash_controller-7a9a9be0865bbec157b8237d390b2f88a6e833201edc3b4542e9aff0fb2f90b0.js",
+    "controllers/input_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/input_controller-88539e1f2825a309d2ef7ad680ce85b303d0b0712461bbb59a365bc82ce03bd3.js",
+    "controllers/input_sync_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/input_sync_controller-a69026063c6cb4faabe0936fce1de1893aa42a9bb876a5869c8ca3bd9ba4e84e.js",
+    "controllers/link_select_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/link_select_controller-9305cf3118d5c181477bb21999d9b5464a61a075a371ec48a2a9a9da44110cec.js",
+    "controllers/merge_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/merge_controller-91359a0fab6b0656f2da79d729e17d23bc183993e7c59b1bd1b110222cb055bd.js",
+    "controllers/password_toggle_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/password_toggle_controller-e7b9e26cf68e5f179a366fd9cd3f63e70081490ce1386803c616ffe05a523fe0.js",
+    "controllers/popover_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/popover_controller-14dfceb5f3ee0095b50d23923212362d070e2cd155a34380db6eba747a2c96c4.js",
+    "controllers/progress_bar_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/progress_bar_controller-bdcad68fdf0a6a8fde3accda3a3660e1da0e6a724e6b4d45d11c935e9f59d5be.js",
+    "controllers/request_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/request_controller-cbfd900571b5524822ac5f5c186fb63d13a5286472836be04ce08dee3546308f.js",
+    "controllers/required_input_form_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/required_input_form_controller-0289634be02e6f1a151c82b6bcd8319647ec0e4db6102b8c92935ae306d50adf.js",
+    "controllers/rich-text-parser/custom_code_flask_parser": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_code_flask_parser-7aea525853aaf7b8d0cd1ac91de390169e75212b2b2590be3c49f2e932d65850.js",
+    "controllers/rich-text-parser/custom_embed_parser": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_embed_parser-20c119836abc1c35f04559522bfb5dba26843756e8a03129d51f33eb0776d271.js",
+    "controllers/rich-text-parser/custom_image_parser": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_image_parser-59e30f272c823891ebfc6803d6f2807bc7c94bb3be02eee54244a7b3b2d30194.js",
+    "controllers/rich-text-parser/custom_list_parser": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_list_parser-e59917c6ccd6310ec24e935c4fdf762e5a98a6440655d7fece2476e4f1d78839.js",
+    "controllers/rich-text-parser/custom_raw_html_parser": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_raw_html_parser-25fcb4579fb5d8fa5d0a223de50277e84e475d2cf0325ceb746149d99c92f430.js",
+    "controllers/rich-text-parser/custom_simple_list_parser": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_simple_list_parser-6ff62d181384a25fe7a0141744c76a2fd3a311cc454514f7ab8985e5f2357158.js",
+    "controllers/rich_text_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich_text_controller-4e82e3de6b9c2581ff18079e9b65a7bdbfe31240c163affec2eebe0f57f0745c.js",
+    "controllers/router_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/router_controller-a3580fc5841fae7efb32243cc8e7fab8356b53f65906615f44043882a9349d1c.js",
+    "controllers/scroll_spy_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/scroll_spy_controller-543bc5848ceb9e760a7e86fb6bf74eaa3b17e869aaa74b3f67415a6ecd49f45d.js",
+    "controllers/search_list_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/search_list_controller-59c9e27249c11797b764006f7fc16a1a5fc444dc295c09ffe4eb5185166ce98c.js",
+    "controllers/search_to_focus_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/search_to_focus_controller-802610b0209093a11fabee976f04f1e00af552d803810663c208733945c6a727.js",
+    "controllers/selection_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/selection_controller-5550d5395a427968e767594f4f6ffcd0825686b9ed9fa346b221e1de605b215b.js",
+    "controllers/slug_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/slug_controller-21df1c633a9e5feda8260f48fba217efcd68fad50ac6ab802fb0eddde4c5409f.js",
+    "controllers/sortable_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/sortable_controller-7a739a3b182d9ef0dfeff9ea91715c450641de4c8f1a492f229dd99731a863d7.js",
+    "controllers/timezone_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/timezone_controller-b13fc654adda20af6b4fd4b26cd216e50df85f6ffe636e1d80053c83cc0e4d0a.js",
+    "controllers/tooltip_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/tooltip_controller-b517848f070b0b9ded871d3909fa7f21848c964ae5d8f6271c4b064c382612d6.js",
+    "controllers/turbo_frame_flash_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/turbo_frame_flash_controller-03d1853c33f612779735d2bddbfe8ee4c74fcc2d907b6594dadabc405e2208ce.js",
+    "controllers/turbo_frame_modal_controller": "/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/turbo_frame_modal_controller-dec5dc9f8437cdad2101ac683919f7e96d98fe9e933937ee55c769465d169076.js"
+  }
+}</script>
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/requestjs-c7150df01ef8f2501194fdc0acfaa04747b98cf4295882aece676b4235edc075.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/application-7ffb6b67deaf07e50fae3ed73c64362929f7717222e9af66cebd8f2a569d97ab.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/turbo.min-16e688b3ebc047bfacf87e521e8a9b8db569f22d864a686a0736bd560b26b2d8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@hotwired--stimulus-379f09adbcd004e5b2c2793635d128b6e72c08d1ef5337bf8a5d1e260aaa403e.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/utils/helper-ca114e436f78dc8891e8a01177da72671652582391a79ed68fe7e9d944526c6f.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@rails--activestorage-5c8d84ec504a53ac574def28e80b50a2b9a1e2b8fcb65e75cea0887a9212ddd8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-animated-number-020f8f5d3fb4c593f118d4f7ccff05fc1f8a31fef22bb2887fcc9e126c58d1c1.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-reveal-controller-e4715d1fbfde10302aff1b43091b05aa1cc5a8c33d0699fecc4575b38b28bd33.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-clipboard-bc91e4c1cd48c7946004409934a9c8f1980776eda7ba962764ad392d8d0ed17b.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-multiselect-67b00de6875f970c89eaaae0b1a62b51b33edbd4ef482d31f11c408b7157d49e.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-scroll-to-f674996091cb0f0c9c918919712b3b1b937848b7a3223d8993b5e8356ebb391d.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-carousel-be699975558ea256db58640b04248232795c62985ac412267098666a9630b31e.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/ssr-window-4fe7d3ba9c5f99c9cabd56d1f850db5e1ac465d9f4b55e9270fd14c8055f5f76.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper--bundle-a59bc15a2e9b1194c209e225f99a00b794ae7fce9c624b1904076dc5e0e3ff59.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper-bundle/q_Dmumbx-744d64e5cb5cf6e1c7e7b9cf8f2bdb07c4b8d3f6049a1e65b85135cf3129b3b8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper-bundle/u9_e3QsJ-6ff04a09f7618927bcd4015ffa1e7d283c5cad60b789c3f95f9b5885d0717583.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/swiper-bundle/aUCo-AuJ-2e56ecb39bad13b69d41d2460f425048e953a63e8b2a5c5ef59ae5730dc7df29.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/sortablejs-df5ea22b27dc8daf7aefda9f5b803f797c3b40d1eb3d8fcb8eebfb44e9a9c4ad.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@honeybadger-io--js-94460d64db4c055b29fa8e20ea43989303e461308c64fceeaa9a9033462c31c8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--editorjs-add75ff66c39b34b07921cfe241f809eb008ca067137586ccbd2bf34c3f632e9.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--header-54bb0b2deaf47906922ae0ff661246736005c45109b065b593051ac8dbb3497f.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--quote-a7d5df42c8e1d51b3f429c7aadefbb43ebe778cae960d130527f0f6a62c4a787.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--embed-c9f3d5bb6b70e087b05cfc09e8b6fd5e6578cb952d7d433fb3b07cf2d03f749c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--marker-e563de94c70d27b88d1d9631723a4c9c8917db501169e1ffade5957f6294bb0f.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--underline-fa70a67a8f5ae70c7dd252717a17471c7d2e95b5b6eed60d832301123c343245.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/editorjs-html-86248f600ce08990eda19a1c91a1c609a3147ea95cb0628cf999cc21728f2e2c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--list-9c9bac9cefa18aebaaeeebfd83e790b3d1bca9e38e688715fde3eeaf301092d6.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--nested-list-7e03bc08ec42b4f44dd0d2e6bf0a6505442490ce517ac0a83d0b42fb2c396957.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--raw-4c618c32d89a45815ede7320444d9bb41608bd055040a809fee701e884083872.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--inline-code-a4c5eac60c88c4e277dd2927ad6c7e6ce888ec1940f9eddf6b5cd864dbc3a692.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--simple-image-e3054be8332980cf6ab47855446c38eeaad32257fefbe6ea60fde8b1ec3fc5b1.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/@editorjs--image-aecb5878cd3ebaa74141426f88cad25c9f3761ede0830a86a2978496c3ca577e.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/editorjs-text-color-plugin-cd7b57c4060603fc13c4a04cdfc6967228bde74909bb5707383e72e2ce54ca46.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/editorjs-codeflask@main-e0aa077ab1b095b6860bf63ae3de9b6af37bb915d9bd698d3a506950077cc34a.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-dropdown-c22aa432c058a134a0fcd4dfd4cdaf627a67b13b47000c246b959c8811e457b5.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/hotkeys-js-496b2fb9b0b39a0cc43549f576f20d13e15e9ceb18cc316d7fe1fcfe242715f1.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stimulus-use-8b0ae74337c38828f34f74e6e7a8eef10090e122ab782d33db0efbec84f3d6d4.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs-a128eea38b363badd3291275b8dc8ea20e5b7c856d80cac0963963c707cfb8f8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--line-numbers--prism-line-numbers-54b2ea6b93174a6f0e395259e7b81677dae2b690dd8a8e78bb57c9516bb26848.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--toolbar--prism-toolbar-bd96e12a89c91c3335c90863ad85bc704d5d766382989dfda21b005528d9b0ec.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--show-language--prism-show-language-1ae70e19b14d2c31d91de6af2ff7d781c632da5d2be20592e6bdf462732fb860.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/prismjs--plugins--autoloader--prism-autoloader.min.js-1dd99a8498777499aa00ecb35a7182bea97eb7be9cd88d25516a42cd664fd683.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-groovy-1dd3f9f9a506f7792486a654e1ef8fe0c9cebb8873319115c8894f849df10c51.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-yaml-4bed01bc2550f473059ac61ef9dc763b70d9e10f02f6f426c282ed8bf2f87792.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-git-87e2efad35f6d7ad28760acad7789c90f414e092a8f207cf49dccf11a5611485.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-mongodb-cd2e52bd7b15134245a2b4e651c8d0e42ef54ac5e3f327bdfb9d7c778487e2e8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-typescript-85c1e49b8450f67591b3c5e5633d5477a616c024da771133748a75948ceccce8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-jsx-0a66b78816919142cba29f4a9934a99023b6a99bfa3438bbee63c2aff460c8f8.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-tsx-189c9ef290c4aacf9829f57a666b42348751e64562e222539943b4185d590e06.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-regex-a1381f9a8566c896a203171411fd8cdbce2e0e4d27da9775d981d508761ffd51.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-scss-5564901b359c232b7614f1d1da652c3c9c92c7861726bc08cab90306f5e6e12a.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-matlab-28d2ccc02e9ce9038f0607c49e9e44789d2f3f74c816284e17493d38bc27407b.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-r-69c917f1e6ad93680312b2441467654796936e5387cd3ff4dfe5031a1702cb40.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-rust-0c0a0396de8818e245682e75f174693c2347212f9b3b5b191e50aa38e86e3185.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-solidity-92bdd3cde9dfe3dc288fed3a5895c748a4ad88b70f770ea036aa87e1ac27685d.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-sql-5506064463b8c66c086660f6062b739c6c1ad64d1629abab24b6d2bcf9defb34.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-wasm-fcc38bccc8c72cbba6835c25d9ceba2a9363376a3ba62efc482ef630a7a48b1a.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-docker-e37b50495a42874dc207d61f32b507df6d8428a5315b8d0b1a8e478da12f1fb2.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-graphql-eb4abd5293cd97a7151c8bda2112e45f6a84d5056f6234a4a76e2e1075e846db.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-makefile-d059d6fddcc9ec428538918cb8e670ab9bef8a6aae16763f510a551ca61bc872.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-markdown-87065b622100365afe2b8d9b04727f324d65e74f39d9df8c24125b8d7ecb604f.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-json-b353eafcd973025043f7e7d226b44a42fe675aac8e51c263b98261228f1ae051.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-python-3e6a58bf00207cf83ce97a652f2deff4cbbfe75409184210a1d244aae0d319dc.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-protobuf-80f7eb35bc3f250f03be6e853980ba6a9a82f4f0141ce9bbaa8b728faad8796d.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/languages/prismjs--components--prism-python-3e6a58bf00207cf83ce97a652f2deff4cbbfe75409184210a1d244aae0d319dc.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stackup_bridge/current_location-744f2ed2e240424bf914465ff3fe735ddfd0a9ee2d0a3f64a39073d878626bfa.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stackup_bridge/provisioning_redirect-7b3fcb57e3e6bc16826db1a5a0806667b66142550ee8478e3ccbc184d4936f55.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/stackup_bridge/stackup_bridge_utils-91ca7208f3a598c9cbbb996d4d675990d6992f2f5bce5c44b38396d0ff943aa2.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/anchor_to_scroll_controller-e9e53ddb16ca1d6996b5d56c1a4aab6bed80947c098080eacda2f94f233c1b8b.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/application-97f13946d3892b4b51e252cdb87dbd96af7484a464b8e58f07679045cf663af2.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/auto_perform_controller-4caff5b39b0470dcdbf675abc70c27e7dcda2252eca9a4bdfa2a068015dc526c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/back_to_top_controller-ea95a34ae346d4ec3f1281c7e855ed56f0bef47a040f7fefa7bd7a1726661c77.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/character_counter_controller-6292a9b369a23f3d8bff296a3d0d619dd3e8a0e1c725aaa607b69b00873b66c1.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/countdown_second_controller-c3a43bf6d82edba62106e4dfe3357f0177e812e638b2022cbfd4e3a03ade9cd1.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/countdown_timer_controller-650f1797ff92df19e5ab31b41ccafd8c36a76313c44d0cc8e1d0bd696e6c24d9.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/country_select_controller-c4f88659fd2fbb86b7d75edf7835c663919233ce68b580abb9ced27ebc79a079.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/detect_input_change_controller-e61bcd89c71562fae65dacda8a37fe57370134f96d0077c51ee90b2cb07c6b6f.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/direct_upload_input_controller-9d019a7330514d30bc56b616fa364c55d18936af03fdd84bc6e62e6766b9c2be.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/dirty_form_controller-4d89f1ca08b2f0f8a347699575b4eebdc8636ee64229046a3f620cf197e33012.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/drawer_transition_controller-d4fde7d5d3e48737b8f514325b51161b217bf2ce981f1266e2e02a4deb4e545e.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/editable_field_controller-0da78ff712f6bb3ef69f6d37f661125171ae3e060205b14cf7c46d02986ca305.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/editor_controller-a03faf32f1379360840ae169d5790d8490f09c068ce84a6eae28c54cf323d18c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/expand_all_controller-39a5b6e44134ab75c97517175b39d100a8223f34b6e9745e379057e5e54349ae.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/flash_dispatch_controller-47dd6f8d022cdd139f8233e7ee8b0df5269649db105b75f4041312b98f21b679.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/form_submission_controller-e333bcf213eecdead8fb9c23e4a82705c8d39385af0f0d7f3da2601a78648576.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/frame_missing_controller-64b4bced332b2b34753fc9f99d39b642cdde9faddbc127f9ebbbcdc8acc15511.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/highlight_item_controller-19d1b7901e22140217a9b361f0db20e6af7ff7048cef63e6f5db989da1c68135.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/image_input_preview_controller-f16448faa12d1f96b00de885dde766557fd76896b85f78571e3e66efca0fcd6e.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/in_place_editable_controller-28aff9027f32fd5972185f73f007b4f1cd69484c5e1859e9bf45e7a1b31c4c1c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/index-6ca991861f21ae0578905e2740e8c80db8c35c9d2d9d08a9e9d86c10217c9854.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/inline_flash_controller-7a9a9be0865bbec157b8237d390b2f88a6e833201edc3b4542e9aff0fb2f90b0.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/input_controller-88539e1f2825a309d2ef7ad680ce85b303d0b0712461bbb59a365bc82ce03bd3.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/input_sync_controller-a69026063c6cb4faabe0936fce1de1893aa42a9bb876a5869c8ca3bd9ba4e84e.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/link_select_controller-9305cf3118d5c181477bb21999d9b5464a61a075a371ec48a2a9a9da44110cec.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/merge_controller-91359a0fab6b0656f2da79d729e17d23bc183993e7c59b1bd1b110222cb055bd.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/password_toggle_controller-e7b9e26cf68e5f179a366fd9cd3f63e70081490ce1386803c616ffe05a523fe0.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/popover_controller-14dfceb5f3ee0095b50d23923212362d070e2cd155a34380db6eba747a2c96c4.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/progress_bar_controller-bdcad68fdf0a6a8fde3accda3a3660e1da0e6a724e6b4d45d11c935e9f59d5be.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/request_controller-cbfd900571b5524822ac5f5c186fb63d13a5286472836be04ce08dee3546308f.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/required_input_form_controller-0289634be02e6f1a151c82b6bcd8319647ec0e4db6102b8c92935ae306d50adf.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_code_flask_parser-7aea525853aaf7b8d0cd1ac91de390169e75212b2b2590be3c49f2e932d65850.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_embed_parser-20c119836abc1c35f04559522bfb5dba26843756e8a03129d51f33eb0776d271.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_image_parser-59e30f272c823891ebfc6803d6f2807bc7c94bb3be02eee54244a7b3b2d30194.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_list_parser-e59917c6ccd6310ec24e935c4fdf762e5a98a6440655d7fece2476e4f1d78839.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_raw_html_parser-25fcb4579fb5d8fa5d0a223de50277e84e475d2cf0325ceb746149d99c92f430.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich-text-parser/custom_simple_list_parser-6ff62d181384a25fe7a0141744c76a2fd3a311cc454514f7ab8985e5f2357158.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/rich_text_controller-4e82e3de6b9c2581ff18079e9b65a7bdbfe31240c163affec2eebe0f57f0745c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/router_controller-a3580fc5841fae7efb32243cc8e7fab8356b53f65906615f44043882a9349d1c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/scroll_spy_controller-543bc5848ceb9e760a7e86fb6bf74eaa3b17e869aaa74b3f67415a6ecd49f45d.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/search_list_controller-59c9e27249c11797b764006f7fc16a1a5fc444dc295c09ffe4eb5185166ce98c.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/search_to_focus_controller-802610b0209093a11fabee976f04f1e00af552d803810663c208733945c6a727.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/selection_controller-5550d5395a427968e767594f4f6ffcd0825686b9ed9fa346b221e1de605b215b.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/slug_controller-21df1c633a9e5feda8260f48fba217efcd68fad50ac6ab802fb0eddde4c5409f.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/sortable_controller-7a739a3b182d9ef0dfeff9ea91715c450641de4c8f1a492f229dd99731a863d7.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/timezone_controller-b13fc654adda20af6b4fd4b26cd216e50df85f6ffe636e1d80053c83cc0e4d0a.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/tooltip_controller-b517848f070b0b9ded871d3909fa7f21848c964ae5d8f6271c4b064c382612d6.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/turbo_frame_flash_controller-03d1853c33f612779735d2bddbfe8ee4c74fcc2d907b6594dadabc405e2208ce.js">
+<link rel="modulepreload" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/controllers/turbo_frame_modal_controller-dec5dc9f8437cdad2101ac683919f7e96d98fe9e933937ee55c769465d169076.js">
+<script type="module">import "application"</script>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/earn-logomark-color-8d100012f2b88fb0bfe6914524c46067fc55a0615ff54cf8497d2c86e6c5ae01.svg" />
+    <link rel="apple-touch-icon" type="image/svg+xml" sizes="180x180" href="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/earn-logomark-color-8d100012f2b88fb0bfe6914524c46067fc55a0615ff54cf8497d2c86e6c5ae01.svg" />
+
+  </head>
+  <body data-controller="inline-flash flash-dispatch turbo-frame-flash frame-missing"
+  data-action="flash-dispatch:display-content->inline-flash#render
+  frame-missing:trigger->inline-flash#render">
+    <div>
+      <div data-controller="reveal drawer-transition"
+      data-drawer-transition-show-direction-value="translateX(0)"
+      data-drawer-transition-hide-direction-value="translateX(-100%)">
+        <div class="fixed md:hidden inset-0 bg-gray-500 bg-opacity-75 z-[55] hidden -translate-x-full" data-drawer-transition-target="item" data-reveal-target="item"></div>
+<div class="fixed hidden top-0 w-52 md:w-20 px-4 h-screen flex md:flex flex-col items-center gap-y-4 bg-white border-r border-grayscale-9 z-[60] min-w-fit transition-transform -translate-x-full md:translate-x-0" data-controller="tooltip" data-reveal-target="item" data-drawer-transition-target="item">
+  <div class="flex md:hidden justify-left mt-2 p-2 w-full gap-x-2 items-center">
+    <img class="h-8" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/logos/stackup-logo-full-0b5798f58ce2ed23066df14c305a532b403eebe45d04bacdafb68a08e4b2c2e0.svg" />
+    <div class="cursor-pointer ml-auto" data-action="click->drawer-transition#hide">
+      <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/close-icon-dirty-modal-6360bc0aed0d2ad323f61648ecbb4d13cd4bda1fde777e3b2a1f9f2582a3b766.svg" />
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-2 w-full">
+    <a class="relative flex justify-left md:justify-center w-full items-center gap-x-4 md:gap-x-0 p-2" href="#">
+        <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/avatar-sidebar-default-d5a54c91214259a076a8a778be543526e7218a214d8481f0e0718d02123b726c.svg" />
+</a>  </div>
+
+  <hr class="bg-grayscale-9 w-52 md:w-10">
+
+  <div class="flex flex-col gap-y-1 md:gap-y-5 w-full" >
+    <div class="p-1 relative flex items-center gap-x-3 md:gap-x-0">
+      <div class="flex justify-center border border-gray-300 p-1 rounded-lg w-auto md:w-full">
+        <img class="w-8" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/earn-logomark-color-8d100012f2b88fb0bfe6914524c46067fc55a0615ff54cf8497d2c86e6c5ae01.svg" />
+      </div>
+      <span class="md:hidden block text-grayscale-4 font-semibold">Earn</span>
+    </div>
+
+    <a class="cursor-pointer p-2 relative hover:bg-gray-100 hover:rounded-lg flex items-center gap-x-4 md:gap-x-0" data-action="mouseenter-&gt;tooltip#show mouseleave-&gt;tooltip#hide click-&gt;tooltip#hide" data-tooltip="Learn" href="/learn">
+      <img class="w-8" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/learn-logomark-bw-12af62464adae2692921e8d37125565ee0a42b875374946681dc2749c78ef05b.svg" />
+      <span class="md:hidden block text-grayscale-4">Learn</span>
+</a>  </div>
+
+  <div class="flex flex-col mt-auto w-full items-center space-y-4 mb-4" data-controller="popover">
+      <hr class="bg-grayscale-9 w-44 md:hidden">
+      <div class="flex flex-col md:hidden w-full justify-left gap-y-2">
+        <a data-turbo-frame="modal" class="w-full px-4 py-2 flex gap-x-4 items-center" href="https://auth.stackup.dev/web/my/account">
+          <img class="w-8" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/user-settings-6a06f86cdd30d60fd2c8b15c0e2935241713206d3b9e95307ea62df10abc3076.svg" />
+          <span class="text-grayscale-4">Account Settings</span>
+</a>        <a data-turbo-frame="modal" class="w-full px-4 py-2 flex gap-x-4 items-center" href="/account/logout">
+          <img class="w-8" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/logout-b8e8a887231b8ee56500c272278aa605380fd42b28df01549f1219f4eae1c4cf.svg" />
+          <span class="text-grayscale-4 text-red-600">Log Out</span>
+</a>      </div>
+
+      <hr class="hidden md:block bg-grayscale-9 w-10">
+      <!--toggle button-->
+	<span class="theme__toggle-wrap">
+    <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme">
+		<span id="toggle" class="theme__icon">
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+		</span>
+	</span>
+  <!--toggle button-->
+      <div class="hidden md:block md:relative w-full">
+        <div class="flex justify-center cursor-pointer p-2 w-full" data-action="mousedown->popover#toggle">
+          <img class="w-6 h-6" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/settings-gray-b4efbbaa0898ccbae903ba243a5c09f1165594b0c1da4c6abf8de21980ecb7e5.svg" />
+        </div>
+
+        <div class="hidden absolute -top-40 -right-6 h-auto focus:outline-none" data-action="blur->popover#hide" data-popover-target="item" tabindex="0">
+          <div class="md:w-80 w-60 h-auto rounded-xl shadow-lg bg-white absolute py-4">
+            <div class="space-y-2">
+              <div class="px-8 py-6 flex md:px-4 md:py-2">
+                <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/avatar-default-adf2e890d2f63d886da4e97e203dd38a55323798ebb0c1d9d024ad0b45c2d99b.svg" />
+                <div class="ml-3 md:ml-4">
+                  <p class="font-bold text-black">adnarayan</p>
+                  <p class="text-gray-500">@adnarayan</p>
+                </div>
+              </div>
+              <hr class="border-t-grayscale-9">
+              <a data-turbo-frame="modal" class="w-full px-4 py-2 flex gap-x-2 items-start" href="https://auth.stackup.dev/web/my/account">
+                <img class="w-6 h-6" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/user-settings-6a06f86cdd30d60fd2c8b15c0e2935241713206d3b9e95307ea62df10abc3076.svg" />
+                <span class="mb-1 text-grayscale-2 w-full flex">Account Settings</span>
+</a>              <hr class="border-t-grayscale-9">
+              <div class="px-8 md:px-4 py-2 flex justify-start">
+                <a data-turbo-frame="modal" class="w-full flex gap-x-2 items-center text-base text-red-600" href="/account/logout">
+                  <img class="w-6 h-6" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/logout-b8e8a887231b8ee56500c272278aa605380fd42b28df01549f1219f4eae1c4cf.svg" />
+                  <span>Log Out</span>
+</a>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <template data-tooltip-target="template">
+    <div class="hidden sm:block absolute mx-2 -translate-x-1/2 top-0 left-[102px] bg-grayscale-2 rounded-lg text-white p-2 z-50 min-w-[106px] text-center" data-tooltip-target="tooltip">
+      <svg class="absolute -left-14 top-4 w-full rotate-[270deg]" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 9L8.19358 0L0 9H16Z" fill="#333"/>
+      </svg>
+
+      <span data-tooltip-target="message"></span>
+    </div>
+  </template>
+</div>
+
+
+        <div id="top" class="w-full pl-0 md:pl-20">
+          <nav class="bg-white fixed w-full right-0 z-50 px-0 md:pl-20 border-b border-grayscale-8">
+  <div class="mx-auto container 2xl:max-w-full max-w-7xl">
+    <div class="relative flex h-16 justify-between">
+      <div class="md:hidden block p-2 ml-5 mr-4 flex items-center" data-action="mouseup->reveal#toggle click->drawer-transition#show">
+        <button type="button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 3.45455C1 2.09894 2.09894 1 3.45455 1H5.90909C7.2647 1 8.36364 2.09894 8.36364 3.45455V5.90909C8.36364 7.2647 7.2647 8.36364 5.90909 8.36364H3.45455C2.09894 8.36364 1 7.2647 1 5.90909V3.45455Z" stroke="#555555" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 14.0909C1 12.7353 2.09894 11.6364 3.45455 11.6364H5.90909C7.2647 11.6364 8.36364 12.7353 8.36364 14.0909V16.5455C8.36364 17.9011 7.2647 19 5.90909 19H3.45455C2.09894 19 1 17.9011 1 16.5455V14.0909Z" stroke="#555555" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11.6364 3.45455C11.6364 2.09894 12.7353 1 14.0909 1H16.5455C17.9011 1 19 2.09894 19 3.45455V5.90909C19 7.2647 17.9011 8.36364 16.5455 8.36364H14.0909C12.7353 8.36364 11.6364 7.2647 11.6364 5.90909V3.45455Z" stroke="#555555" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11.6364 14.0909C11.6364 12.7353 12.7353 11.6364 14.0909 11.6364H16.5455C17.9011 11.6364 19 12.7353 19 14.0909V16.5455C19 17.9011 17.9011 19 16.5455 19H14.0909C12.7353 19 11.6364 17.9011 11.6364 16.5455V14.0909Z" stroke="#555555" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="flex w-full items-center lg:pr-10 pr-5">
+        <div class="flex flex-1 items-center lg:pl-10 md:pl-5 pl-4 md:border-none border-l border-grayscale-8">
+          <div class="sm:items-stretch sm:justify-start lg:mr-10 mr-4">
+            <a class="flex gap-x-3 flex-shrink-0 items-center" href="/">
+              <img class="w-10" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/earn-logomark-color-8d100012f2b88fb0bfe6914524c46067fc55a0615ff54cf8497d2c86e6c5ae01.svg" />
+              <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.13778 18.5V5.40909H9.95881V7.69105H3.90554V10.8104H9.50497V13.0923H3.90554V16.218H9.98438V18.5H1.13778ZM14.9078 18.6854C14.2814 18.6854 13.7232 18.5767 13.2331 18.3594C12.7431 18.1378 12.3553 17.8118 12.0698 17.3814C11.7885 16.9467 11.6479 16.4055 11.6479 15.7578C11.6479 15.2124 11.748 14.7543 11.9483 14.3835C12.1486 14.0128 12.4213 13.7145 12.7665 13.4886C13.1117 13.2628 13.5037 13.0923 13.9426 12.9773C14.3858 12.8622 14.8503 12.7812 15.3361 12.7344C15.9071 12.6747 16.3674 12.6193 16.7168 12.5682C17.0662 12.5128 17.3198 12.4318 17.4775 12.3253C17.6351 12.2187 17.714 12.0611 17.714 11.8523V11.8139C17.714 11.4091 17.5861 11.0959 17.3304 10.8743C17.079 10.6527 16.7211 10.5419 16.2566 10.5419C15.7665 10.5419 15.3766 10.6506 15.0868 10.8679C14.7971 11.081 14.6053 11.3494 14.5115 11.6733L11.9931 11.4688C12.1209 10.8722 12.3723 10.3565 12.7473 9.92188C13.1223 9.48295 13.606 9.14631 14.1983 8.91193C14.7949 8.6733 15.4853 8.55398 16.2694 8.55398C16.8148 8.55398 17.3368 8.6179 17.8354 8.74574C18.3382 8.87358 18.7836 9.07173 19.1713 9.3402C19.5634 9.60866 19.8723 9.95384 20.0982 10.3757C20.324 10.7933 20.437 11.294 20.437 11.8778V18.5H17.8546V17.1385H17.7779C17.6202 17.4453 17.4093 17.7159 17.1451 17.9503C16.8809 18.1804 16.5634 18.3615 16.1926 18.4936C15.8219 18.6214 15.3936 18.6854 14.9078 18.6854ZM15.6877 16.8061C16.0882 16.8061 16.4419 16.7273 16.7488 16.5696C17.0556 16.4077 17.2963 16.1903 17.4711 15.9176C17.6458 15.6449 17.7331 15.3359 17.7331 14.9908V13.9489C17.6479 14.0043 17.5307 14.0554 17.3816 14.1023C17.2367 14.1449 17.0726 14.1854 16.8894 14.2237C16.7061 14.2578 16.5229 14.2898 16.3397 14.3196C16.1564 14.3452 15.9902 14.3686 15.8411 14.3899C15.5215 14.4368 15.2424 14.5114 15.0037 14.6136C14.7651 14.7159 14.5797 14.8544 14.4476 15.0291C14.3155 15.1996 14.2495 15.4126 14.2495 15.6683C14.2495 16.0391 14.3837 16.3224 14.6522 16.5185C14.9249 16.7102 15.2701 16.8061 15.6877 16.8061ZM22.5495 18.5V8.68182H25.1895V10.3949H25.2917C25.4707 9.78551 25.7711 9.32528 26.193 9.0142C26.6149 8.69886 27.1007 8.54119 27.6504 8.54119C27.7868 8.54119 27.9338 8.54972 28.0914 8.56676C28.2491 8.58381 28.3876 8.60724 28.5069 8.63707V11.0533C28.3791 11.0149 28.2022 10.9808 27.9764 10.951C27.7505 10.9212 27.5439 10.9062 27.3564 10.9062C26.9558 10.9062 26.5978 10.9936 26.2825 11.1683C25.9714 11.3388 25.7243 11.5774 25.541 11.8842C25.362 12.1911 25.2725 12.5447 25.2725 12.9453V18.5H22.5495ZM32.6378 12.8239V18.5H29.9148V8.68182H32.5099V10.4141H32.625C32.8423 9.84304 33.2067 9.39133 33.718 9.05895C34.2294 8.7223 34.8494 8.55398 35.5781 8.55398C36.2599 8.55398 36.8544 8.70312 37.3615 9.00142C37.8686 9.29972 38.2628 9.72585 38.544 10.2798C38.8253 10.8295 38.9659 11.4858 38.9659 12.2486V18.5H36.2429V12.7344C36.2472 12.1335 36.0938 11.6648 35.7827 11.3281C35.4716 10.9872 35.0433 10.8168 34.4979 10.8168C34.1314 10.8168 33.8075 10.8956 33.5263 11.0533C33.2493 11.2109 33.032 11.4411 32.8743 11.7436C32.7209 12.0419 32.642 12.402 32.6378 12.8239Z" fill="#1F2A37"/>
+<path d="M0.860795 36.5V27.7727H4.2017C4.83239 27.7727 5.35653 27.8722 5.77415 28.071C6.1946 28.267 6.50852 28.5355 6.71591 28.8764C6.92614 29.2173 7.03125 29.6037 7.03125 30.0355C7.03125 30.3906 6.96307 30.6946 6.8267 30.9474C6.69034 31.1974 6.5071 31.4006 6.27699 31.5568C6.04688 31.7131 5.78977 31.8253 5.50568 31.8935V31.9787C5.81534 31.9957 6.11222 32.0909 6.39631 32.2642C6.68324 32.4347 6.91761 32.6761 7.09943 32.9886C7.28125 33.3011 7.37216 33.679 7.37216 34.1222C7.37216 34.5739 7.26278 34.9801 7.04403 35.3409C6.82528 35.6989 6.49574 35.9815 6.0554 36.1889C5.61506 36.3963 5.06108 36.5 4.39347 36.5H0.860795ZM2.44176 35.179H4.14205C4.71591 35.179 5.12926 35.0696 5.3821 34.8509C5.63778 34.6293 5.76562 34.3452 5.76562 33.9986C5.76562 33.7401 5.7017 33.5071 5.57386 33.2997C5.44602 33.0895 5.2642 32.9247 5.02841 32.8054C4.79261 32.6832 4.51136 32.6222 4.18466 32.6222H2.44176V35.179ZM2.44176 31.4844H4.00568C4.27841 31.4844 4.52415 31.4347 4.7429 31.3352C4.96165 31.233 5.13352 31.0895 5.25852 30.9048C5.38636 30.7173 5.45028 30.4957 5.45028 30.2401C5.45028 29.902 5.33097 29.6236 5.09233 29.4048C4.85653 29.1861 4.50568 29.0767 4.03977 29.0767H2.44176V31.4844ZM9.63814 38.9545C9.42791 38.9545 9.23331 38.9375 9.05433 38.9034C8.8782 38.8722 8.73757 38.8352 8.63246 38.7926L8.99041 37.5909C9.21484 37.6563 9.41513 37.6875 9.59126 37.6847C9.7674 37.6818 9.92223 37.6264 10.0558 37.5185C10.1921 37.4134 10.3072 37.2372 10.4009 36.9901L10.533 36.6364L8.15945 29.9545H9.79581L11.3043 34.8977H11.3725L12.8853 29.9545H14.5259L11.9052 37.2926C11.783 37.6392 11.6211 37.9361 11.4194 38.1832C11.2177 38.4332 10.9705 38.6236 10.6779 38.7543C10.3881 38.8878 10.0415 38.9545 9.63814 38.9545ZM23.381 30.1719C23.3413 29.7997 23.1737 29.5099 22.8782 29.3026C22.5856 29.0952 22.2049 28.9915 21.7362 28.9915C21.4066 28.9915 21.1239 29.0412 20.8881 29.1406C20.6523 29.2401 20.4719 29.375 20.3469 29.5455C20.2219 29.7159 20.158 29.9105 20.1552 30.1293C20.1552 30.3111 20.1964 30.4687 20.2788 30.6023C20.364 30.7358 20.479 30.8494 20.6239 30.9432C20.7688 31.0341 20.9293 31.1108 21.1055 31.1733C21.2816 31.2358 21.4592 31.2884 21.6381 31.331L22.4563 31.5355C22.7859 31.6122 23.1026 31.7159 23.4066 31.8466C23.7134 31.9773 23.9876 32.142 24.229 32.3409C24.4734 32.5398 24.6665 32.7798 24.8086 33.0611C24.9506 33.3423 25.0217 33.6719 25.0217 34.0497C25.0217 34.5611 24.891 35.0114 24.6296 35.4006C24.3683 35.7869 23.9904 36.0895 23.4961 36.3082C23.0046 36.5241 22.4094 36.6321 21.7106 36.6321C21.0316 36.6321 20.4421 36.527 19.9421 36.3168C19.445 36.1065 19.0558 35.7997 18.7745 35.3963C18.4961 34.9929 18.3455 34.5014 18.3228 33.9219H19.8782C19.9009 34.2259 19.9947 34.4787 20.1594 34.6804C20.3242 34.8821 20.5387 35.0327 20.8029 35.1321C21.07 35.2315 21.3683 35.2812 21.6978 35.2812C22.0415 35.2812 22.3427 35.2301 22.6012 35.1278C22.8626 35.0227 23.0671 34.8778 23.2148 34.6932C23.3626 34.5057 23.4379 34.2869 23.4407 34.0369C23.4379 33.8097 23.3711 33.6222 23.2404 33.4744C23.1097 33.3239 22.9265 33.1989 22.6907 33.0994C22.4577 32.9972 22.185 32.9062 21.8725 32.8267L20.8796 32.571C20.1609 32.3864 19.5927 32.1065 19.1751 31.7315C18.7603 31.3537 18.5529 30.8523 18.5529 30.2273C18.5529 29.7131 18.6921 29.2628 18.9705 28.8764C19.2518 28.4901 19.6339 28.1903 20.1168 27.9773C20.5998 27.7614 21.1467 27.6534 21.7575 27.6534C22.3768 27.6534 22.9194 27.7614 23.3853 27.9773C23.854 28.1903 24.2219 28.4872 24.489 28.8679C24.756 29.2457 24.8938 29.6804 24.9023 30.1719H23.381ZM29.6314 29.9545V31.1477H25.8686V29.9545H29.6314ZM26.7976 28.3864H28.3402V34.5312C28.3402 34.7386 28.3714 34.8977 28.4339 35.0085C28.4993 35.1165 28.5845 35.1903 28.6896 35.2301C28.7947 35.2699 28.9112 35.2898 29.0391 35.2898C29.1357 35.2898 29.2237 35.2827 29.3033 35.2685C29.3857 35.2543 29.4482 35.2415 29.4908 35.2301L29.7507 36.4361C29.6683 36.4645 29.5504 36.4957 29.397 36.5298C29.2464 36.5639 29.0618 36.5838 28.843 36.5895C28.4567 36.6009 28.1087 36.5426 27.799 36.4148C27.4893 36.2841 27.2436 36.0824 27.0618 35.8097C26.8828 35.5369 26.7947 35.196 26.7976 34.7869V28.3864ZM32.805 36.6321C32.3903 36.6321 32.0167 36.5582 31.6843 36.4105C31.3548 36.2599 31.0934 36.0384 30.9002 35.7457C30.7099 35.4531 30.6147 35.0923 30.6147 34.6634C30.6147 34.294 30.6829 33.9886 30.8192 33.7472C30.9556 33.5057 31.1417 33.3125 31.3775 33.1676C31.6133 33.0227 31.8789 32.9134 32.1744 32.8395C32.4727 32.7628 32.7809 32.7074 33.0991 32.6733C33.4826 32.6335 33.7937 32.598 34.0323 32.5668C34.271 32.5327 34.4442 32.4815 34.5522 32.4134C34.663 32.3423 34.7184 32.233 34.7184 32.0852V32.0597C34.7184 31.7386 34.6232 31.4901 34.4329 31.3139C34.2425 31.1378 33.9684 31.0497 33.6104 31.0497C33.2326 31.0497 32.9329 31.1321 32.7113 31.2969C32.4925 31.4616 32.3448 31.6562 32.2681 31.8807L30.8278 31.6761C30.9414 31.2784 31.1289 30.946 31.3903 30.679C31.6516 30.4091 31.9712 30.2074 32.3491 30.0739C32.7269 29.9375 33.1445 29.8693 33.6019 29.8693C33.9173 29.8693 34.2312 29.9062 34.5437 29.9801C34.8562 30.054 35.1417 30.1761 35.4002 30.3466C35.6587 30.5142 35.8661 30.7429 36.0224 31.0327C36.1815 31.3224 36.261 31.6847 36.261 32.1193V36.5H34.7781V35.6009H34.7269C34.6332 35.7827 34.5011 35.9531 34.3306 36.1122C34.163 36.2685 33.9513 36.3949 33.6957 36.4915C33.4428 36.5852 33.146 36.6321 32.805 36.6321ZM33.2056 35.4986C33.5153 35.4986 33.7837 35.4375 34.011 35.3153C34.2383 35.1903 34.413 35.0256 34.5352 34.821C34.6602 34.6165 34.7227 34.3935 34.7227 34.152V33.3807C34.6744 33.4205 34.592 33.4574 34.4755 33.4915C34.3619 33.5256 34.234 33.5554 34.092 33.581C33.9499 33.6065 33.8093 33.6293 33.6701 33.6491C33.5309 33.669 33.4102 33.6861 33.3079 33.7003C33.0778 33.7315 32.8718 33.7827 32.69 33.8537C32.5082 33.9247 32.3647 34.0241 32.2596 34.152C32.1545 34.277 32.1019 34.4389 32.1019 34.6378C32.1019 34.9219 32.2056 35.1364 32.413 35.2812C32.6204 35.4261 32.8846 35.4986 33.2056 35.4986ZM40.6673 36.6278C40.0138 36.6278 39.4528 36.4844 38.984 36.1974C38.5181 35.9105 38.1587 35.5142 37.9059 35.0085C37.6559 34.5 37.5309 33.9148 37.5309 33.2528C37.5309 32.5881 37.6587 32.0014 37.9144 31.4929C38.1701 30.9815 38.5309 30.5838 38.9968 30.2997C39.4656 30.0128 40.0195 29.8693 40.6587 29.8693C41.19 29.8693 41.6602 29.9673 42.0692 30.1634C42.4812 30.3565 42.8093 30.6307 43.0536 30.9858C43.2979 31.3381 43.4371 31.75 43.4712 32.2216H41.9968C41.9371 31.9062 41.7951 31.6435 41.5707 31.4332C41.3491 31.2202 41.0522 31.1136 40.68 31.1136C40.3647 31.1136 40.0877 31.1989 39.8491 31.3693C39.6104 31.5369 39.4244 31.7784 39.2908 32.0938C39.1602 32.4091 39.0948 32.7869 39.0948 33.2273C39.0948 33.6733 39.1602 34.0568 39.2908 34.3778C39.4215 34.696 39.6048 34.9418 39.8406 35.1151C40.0792 35.2855 40.359 35.3707 40.68 35.3707C40.9073 35.3707 41.1104 35.3281 41.2894 35.2429C41.4712 35.1548 41.6232 35.0284 41.7454 34.8636C41.8675 34.6989 41.9513 34.4986 41.9968 34.2628H43.4712C43.4343 34.7259 43.2979 35.1364 43.0621 35.4943C42.8263 35.8494 42.5053 36.1278 42.0991 36.3295C41.6928 36.5284 41.2156 36.6278 40.6673 36.6278ZM46.1442 34.446L46.1399 32.5838H46.3871L48.7393 29.9545H50.5419L47.6484 33.1761H47.3288L46.1442 34.446ZM44.7379 36.5V27.7727H46.2805V36.5H44.7379ZM48.8459 36.5L46.7152 33.5213L47.755 32.4347L50.6911 36.5H48.8459ZM57.1396 27.7727H58.7205V33.4744C58.7205 34.0994 58.5728 34.6491 58.2773 35.1236C57.9847 35.598 57.5728 35.9687 57.0415 36.2358C56.5103 36.5 55.8896 36.6321 55.1793 36.6321C54.4663 36.6321 53.8441 36.5 53.3129 36.2358C52.7816 35.9687 52.3697 35.598 52.0771 35.1236C51.7844 34.6491 51.6381 34.0994 51.6381 33.4744V27.7727H53.2191V33.3423C53.2191 33.706 53.2987 34.0298 53.4577 34.3139C53.6197 34.598 53.8469 34.821 54.1396 34.983C54.4322 35.142 54.7788 35.2216 55.1793 35.2216C55.5799 35.2216 55.9265 35.142 56.2191 34.983C56.5146 34.821 56.7418 34.598 56.9009 34.3139C57.06 34.0298 57.1396 33.706 57.1396 33.3423V27.7727ZM60.3707 38.9545V29.9545H61.8878V31.0369H61.9773C62.0568 30.8778 62.169 30.7088 62.3139 30.5298C62.4588 30.348 62.6548 30.1932 62.902 30.0653C63.1491 29.9347 63.4645 29.8693 63.848 29.8693C64.3537 29.8693 64.8097 29.9986 65.2159 30.2571C65.625 30.5128 65.9489 30.892 66.1875 31.3949C66.429 31.8949 66.5497 32.5085 66.5497 33.2358C66.5497 33.9545 66.4318 34.5653 66.196 35.0682C65.9602 35.571 65.6392 35.9545 65.233 36.2188C64.8267 36.483 64.3665 36.6151 63.8523 36.6151C63.4773 36.6151 63.1662 36.5526 62.919 36.4276C62.6719 36.3026 62.473 36.152 62.3224 35.9759C62.1747 35.7969 62.0597 35.6278 61.9773 35.4688H61.9134V38.9545H60.3707ZM61.8835 33.2273C61.8835 33.6506 61.9432 34.0213 62.0625 34.3395C62.1847 34.6577 62.3594 34.9062 62.5866 35.0852C62.8168 35.2614 63.0952 35.3494 63.4219 35.3494C63.7628 35.3494 64.0483 35.2585 64.2784 35.0767C64.5085 34.892 64.6818 34.6406 64.7983 34.3224C64.9176 34.0014 64.9773 33.6364 64.9773 33.2273C64.9773 32.821 64.919 32.4602 64.8026 32.1449C64.6861 31.8295 64.5128 31.5824 64.2827 31.4034C64.0526 31.2244 63.7656 31.1349 63.4219 31.1349C63.0923 31.1349 62.8125 31.2216 62.5824 31.3949C62.3523 31.5682 62.1776 31.8111 62.0582 32.1236C61.9418 32.4361 61.8835 32.804 61.8835 33.2273Z" fill="#9CA3AF"/>
+</svg>
+</a>          </div>
+            <div class="sm:flex hidden space-x-2 w-fit font-semibold items-center text-grayscale-5">
+              <a class="cursor-pointer flex px-6 py-2 hover:px-[23px] hover:border hover:border-grayscale-8 rounded-3xl" href="/">Home</a>
+              <a class="cursor-pointer flex px-6 py-2 hover:px-[23px] hover:border hover:border-grayscale-8 rounded-3xl" href="/campaigns">Explore</a>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4 lg:space-x-10 text-base">
+            <div class="hidden lg:flex items-center" data-controller="reveal" data-reveal-hidden-class="hidden">
+                <a class="hidden sm:flex space-x-2 items-end px-6 py-2 rounded-3xl active:border active:border-grayscale-8" href="/my/finances">
+                  <div class="flex items-center space-x-2 md:space-x-1 lg:space-x-2" data-reveal-target="item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21 9.55773C21 8.0609 19.7943 6.83259 18.2584 6.70763L17.6224 4.93532C17.0695 3.39463 15.2812 2.60421 13.6908 3.19759L4.13569 6.76269C4.04025 6.7983 3.95378 6.84635 3.87753 6.90413C2.77675 7.32788 2 8.35631 2 9.55773V18.1394C2 19.7193 3.34315 21 5 21L18 21C19.6569 21 21 19.7193 21 18.1394V15.9773C21.5978 15.6475 22 15.0312 22 14.3253V12.4183C22 11.7124 21.5978 11.0961 21 10.7664V9.55773ZM19 10.5113V9.55773C19 9.03112 18.5523 8.60421 18 8.60421L5 8.60421C4.44772 8.60421 4 9.03112 4 9.55773L4 18.1394C4 18.666 4.44772 19.093 5 19.093L18 19.093C18.5523 19.093 19 18.666 19 18.1394V16.2324H18C16.3431 16.2324 15 14.9517 15 13.3718C15 11.792 16.3431 10.5113 18 10.5113H19ZM15.7301 5.55276L16.1408 6.69716L9.7999 6.69717L14.4196 4.97351C14.9497 4.77572 15.5458 5.03919 15.7301 5.55276ZM17 13.3718C17 12.8452 17.4477 12.4183 18 12.4183H20V14.3253H18C17.4477 14.3253 17 13.8984 17 13.3718Z" fill="#999999"/>
+                    </svg>
+                    <span>Balance Hidden</span>
+                  </div>
+
+                  <div class="flex hidden md:space-x-1 lg:space-x-2" data-reveal-target="item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21 9.55773C21 8.0609 19.7943 6.83259 18.2584 6.70763L17.6224 4.93532C17.0695 3.39463 15.2812 2.60421 13.6908 3.19759L4.13569 6.76269C4.04025 6.7983 3.95378 6.84635 3.87753 6.90413C2.77675 7.32788 2 8.35631 2 9.55773V18.1394C2 19.7193 3.34315 21 5 21L18 21C19.6569 21 21 19.7193 21 18.1394V15.9773C21.5978 15.6475 22 15.0312 22 14.3253V12.4183C22 11.7124 21.5978 11.0961 21 10.7664V9.55773ZM19 10.5113V9.55773C19 9.03112 18.5523 8.60421 18 8.60421L5 8.60421C4.44772 8.60421 4 9.03112 4 9.55773L4 18.1394C4 18.666 4.44772 19.093 5 19.093L18 19.093C18.5523 19.093 19 18.666 19 18.1394V16.2324H18C16.3431 16.2324 15 14.9517 15 13.3718C15 11.792 16.3431 10.5113 18 10.5113H19ZM15.7301 5.55276L16.1408 6.69716L9.7999 6.69717L14.4196 4.97351C14.9497 4.77572 15.5458 5.03919 15.7301 5.55276ZM17 13.3718C17 12.8452 17.4477 12.4183 18 12.4183H20V14.3253H18C17.4477 14.3253 17 13.8984 17 13.3718Z" fill="#999999"/>
+                    </svg>
+                    <span>Balance:</span>
+                    <span class="flex font-semibold">
+                      <div class="flex mr-1"><span></span><span>$3.00</span></div>
+                    </span>
+                  </div>
+</a>                <div class="h-6 w-px bg-grayscale-8 ml-2"></div>
+                <button class="w-max-content px-2 py-2 ml-2 active:ml-[6px] active:border active:border-grayscale-8 rounded-3xl" data-action="click->reveal#toggle">
+                  <span data-reveal-target="item">
+                    <img class="w-6 " src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/eye-21f767ba3d81a89cf3b8059b36e4d88ed9aa60e9249db19ef7ef1e22625069f1.svg" />
+                  </span>
+
+                  <span class="hidden" data-reveal-target="item">
+                    <img class="w-6" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/eye-off-ae3bb4c08ae9997c57d8192986dbc583e1e64045d1c81f9d9929697b138f394a.svg" />
+                  </span>
+                </button>
+            </div>
+
+            <div class="p-2" data-controller="dropdown">
+              <button type="button" class="align-middle" data-action="dropdown#toggle click@window->dropdown#hide">
+                <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/hamburger-menu-73bc6ea443379ca518ccc203e8748916ab7cc5edb204bd955aa65f2df77172d8.svg" />
+              </button>
+              <div
+                data-dropdown-target="menu"
+                class="flex flex-col hidden transition transform origin-top-right absolute top-16 md:right-6 right-0 pb-4 w-full md:max-w-xs bg-white shadow-around font-semibold"
+                data-transition-enter-from="opacity-0 scale-95"
+                data-transition-enter-to="opacity-100 scale-100"
+                data-transition-leave-from="opacity-100 scale-100"
+                data-transition-leave-to="opacity-0 scale-95"
+              >
+                <div class="px-6 py-4 flex space-x-3 items-center border-b border-grayscale-8">
+                  <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/avatar-default-adf2e890d2f63d886da4e97e203dd38a55323798ebb0c1d9d024ad0b45c2d99b.svg" />
+                  <span>adnarayan</span>
+                </div>
+                <div class="flex flex-col py-2 sm:hidden block border-b border-grayscale-8">
+                  <a class="hover:bg-grayscale-9 px-6 py-3" href="/">Home</a>
+                  <a class="hover:bg-grayscale-9 px-6 py-3" href="/campaigns">Explore</a>
+                </div>
+                <div class="flex flex-col py-2">
+                    <a class="hover:bg-grayscale-9 px-6 py-3" href="/account">My Profile</a>
+
+                    <a class="flex hover:bg-grayscale-9 space-x-2 px-6 py-3" href="/my/finances">
+                      <span>My Balance</span>
+                        <div class="h-6 w-px bg-grayscale-8 ml-2"></div>
+                        <div class="flex "><span></span><span>$3.00</span></div>
+</a>
+                    <a class="px-6 py-3 bg-grayscale-9" href="/my/journeys/quests">My Progress</a>
+                  <a class="hover:bg-grayscale-9 px-6 py-3" target="_blank" href="https://stackuphelpcentre.zendesk.com/hc/en-us">Help Center</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+          <main class="mx-auto pt-16">
+
+            <div class="flex fixed left-0 right-0 pl-20 z-30" data-inline-flash-target="output"></div>
+
+            <turbo-frame autoscroll="true" data-autoscroll-block="start" data-autoscroll-behavior="smooth" id="quests_detail">
+  <div class="max-w-6xl mx-5 sm:mx-8 md:mx-9 xl:mx-auto sm:py-5 pb-5"
+  data-controller="reveal scroll-spy anchor-to-scroll tooltip"
+  data-scroll-spy-highlight-class="fill-grayscale-3"
+  data-scroll-spy-default-class="fill-grayscale-7"
+  data-scroll-spy-active-class="bg-grayscale-9 rounded-md">
+    <div class="flex flex-col space-y-10 pt-5">
+      <div class="flex flex-col space-y-8 lg:space-y-6">
+          <div class="hidden sm:flex items-center text-sm"><a class="hover:underline hover:font-semibold max-w-[200px] truncate " data-turbo-frame="_top" href="/campaigns">Campaigns</a><span class="mx-1"><svg width="12" height="12" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill_rule="evenodd" clip_rule="evenodd" d="M0.910765 13.9518C0.585328 13.6264 0.585328 13.0988 0.910765 12.7733L6.15484 7.52926L0.910764 2.28518C0.585327 1.95974 0.585327 1.4321 0.910764 1.10667C1.2362 0.78123 1.76384 0.78123 2.08928 1.10667L7.92261 6.94C8.24805 7.26544 8.24805 7.79307 7.92261 8.11851L2.08928 13.9518C1.76384 14.2773 1.2362 14.2773 0.910765 13.9518Z" fill="#333333" /></svg></span><a class="hover:underline hover:font-semibold max-w-[200px] truncate " data-turbo-frame="_top" href="/campaigns/hackglobal-2024-virtual-bounty-season-2">hackglobal 2024: Virtual Bounty Season 2</a><span class="mx-1"><svg width="12" height="12" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill_rule="evenodd" clip_rule="evenodd" d="M0.910765 13.9518C0.585328 13.6264 0.585328 13.0988 0.910765 12.7733L6.15484 7.52926L0.910764 2.28518C0.585327 1.95974 0.585327 1.4321 0.910764 1.10667C1.2362 0.78123 1.76384 0.78123 2.08928 1.10667L7.92261 6.94C8.24805 7.26544 8.24805 7.79307 7.92261 8.11851L2.08928 13.9518C1.76384 14.2773 1.2362 14.2773 0.910765 13.9518Z" fill="#333333" /></svg></span><div class="max-w-[200px] truncate ">Bounty: Build the next best Bitcoin-focused DeFi app on ZetaChain</div></div>
+
+        
+
+
+          <div class="flex justify-between items-center space-x-6">
+            <div class="flex flex-col space-y-6 w-full">        
+              <div class="flex flex-col space-y-4">
+                <div class="flex flex-col space-y-2">
+                  <span class="text-grayscale-6 text-lg font-bold">Quest</span>
+                  <h1 class="text-[28px] font-bold">Bounty: Build the next best Bitcoin-focused DeFi app on ZetaChain</h1>
+                </div>
+                  <div class="flex items-center text-grayscale-4 space-x-4">
+                    <span class="text-sm font-semibold">Sponsored by</span>
+                    <img class="rounded w-24" src="https://earn.stackup.dev/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtWTJNME5HUmtZaTB4TURaakxUUTVNVFF0T0RjMk1DMDRNbVZtWlRFd01EUmhNRFVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--9e59d695d4449c283b9def724003f6e9fe579fd6/AngelHack%20Logo%20Black.png" />
+                  </div>
+              </div>
+
+              <div class="flex lg:justify-between flex-col lg:flex-row space-y-8 lg:space-y-0">
+                <div class="flex items-center space-x-4 text-sm font-semibold">
+                  <div>Ends in</div>
+                  <div data-controller="countdown-timer" data-countdown-timer-target="item" data-countdown-timer-countdown-value="1722571200" class="flex space-x-2 lowercase"><div class="flex flex-col items-center space-y-1"><p data-countdown-timer-target="days" class="bg-grayscale-9 rounded-lg text-2xl font-bold px-3 py-2"></p><p class="text-sm font-semibold">Days</p></div><div class="flex flex-col items-center space-y-1"><p data-countdown-timer-target="hours" class="bg-grayscale-9 rounded-lg text-2xl font-bold px-3 py-2"></p><p class="text-sm font-semibold">Hrs</p></div><div class="flex flex-col items-center space-y-1"><p data-countdown-timer-target="minutes" class="bg-grayscale-9 rounded-lg text-2xl font-bold px-3 py-2"></p><p class="text-sm font-semibold">Mins</p></div></div>
+</div>
+              </div>
+
+              <div class="flex flex-col lg:flex-row w-full gap-y-6 gap-x-0 lg:gap-x-6 justify-start mt-8">
+                <div class="w-full lg:max-w-md">
+                    <turbo-frame loading="lazy" class="w-full" id="quests_participation" src="https://earn.stackup.dev/campaigns/hackglobal-2024-virtual-bounty-season-2/quests/bounty-build-the-next-best-bitcoin-focused-defi-app-on-zetachain/participation/new" complete="">
+      <form class="button_to" method="post" action="/campaigns/hackglobal-2024-virtual-bounty-season-2/quests/bounty-build-the-next-best-bitcoin-focused-defi-app-on-zetachain/participation"><button data-turbo-frame="quests_detail" class="inline-flex primary-dark-button text-white justify-center w-full rounded-md py-3 px-8  text-grayscale-2 font-semibold text-xl" type="submit">Join Quest</button><input type="hidden" name="authenticity_token" value="{HIDDEN____}" autocomplete="off"></form>
+</turbo-frame>                  </div>
+
+                <div class="flex items-end w-full ">
+                  <a class="inline-flex items-center gap-x-4 rounded-md border border-grayscale-2 text-xl font-semibold text-white px-4 py-2 w-full lg:max-w-96 xl:max-w-auto justify-center hover:bg-grayscale-8" target="blank" href="https://discord.com/channels/895564164783808523/1060491074109456454">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                      <g clip-path="url(#clip0_1422_61826)">
+                        <path d="M27.607 6.03114C25.5046 5.0686 23.2851 4.38574 21.0052 4C20.6932 4.55772 20.4109 5.13153 20.1595 5.71905C17.731 5.35309 15.2613 5.35309 12.8328 5.71905C12.5813 5.13159 12.299 4.55778 11.9871 4C9.70578 4.38899 7.4848 5.07348 5.38026 6.03618C1.20219 12.2177 0.069585 18.2457 0.635889 24.1881C3.08267 25.9959 5.82131 27.3707 8.73277 28.2529C9.38835 27.3712 9.96845 26.4358 10.4669 25.4566C9.52015 25.103 8.60634 24.6667 7.73608 24.1529C7.96512 23.9867 8.18912 23.8156 8.40558 23.6495C10.9378 24.8403 13.7017 25.4578 16.4999 25.4578C19.2982 25.4578 22.0621 24.8403 24.5943 23.6495C24.8133 23.8282 25.0373 23.9993 25.2638 24.1529C24.3919 24.6676 23.4764 25.1047 22.5279 25.4591C23.0258 26.4378 23.6059 27.3725 24.2621 28.2529C27.176 27.3743 29.9168 26.0001 32.364 24.1906C33.0285 17.2993 31.2289 11.3267 27.607 6.03114ZM11.1842 20.5336C9.60614 20.5336 8.30238 19.1014 8.30238 17.3396C8.30238 15.5778 9.56084 14.1331 11.1792 14.1331C12.7976 14.1331 14.0913 15.5778 14.0636 17.3396C14.0359 19.1014 12.7925 20.5336 11.1842 20.5336ZM21.8156 20.5336C20.235 20.5336 18.9363 19.1014 18.9363 17.3396C18.9363 15.5778 20.1948 14.1331 21.8156 14.1331C23.4365 14.1331 24.7202 15.5778 24.6925 17.3396C24.6648 19.1014 23.424 20.5336 21.8156 20.5336Z" fill="#999999"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1422_61826">
+                          <rect width="32" height="32" fill="#999999" transform="translate(0.5)"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="text-grayscale-2">Join us on Discord</span>
+</a>                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+      <div class="py-4 border-y border-grayscale-8">
+        <div class="flex sm:pb-0 pb-4">
+          <div class="grow flex flex-col items-center space-y-2 border-r border-grayscale-8 md:px-6">
+            <span class="text-sm font-bold text-grayscale-5">STATUS</span>
+            <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-md ">Ongoing</span>
+              <div class="text-nowrap"><span class="bg-gray-100 text-gray-900 text-sm px-3 py-1 rounded-md ">Not Joined</span></div>
+          </div>
+          <div class="grow sm:flex hidden flex-col text-center space-y-1 border-r border-grayscale-8 md:px-4">
+            <span class="text-sm font-bold text-grayscale-5">STARTS</span>
+            <time datetime="2024-07-05T12:00:00+08:00">Jul  5, 2024, 12:00</time>
+            <span class="text-xs font-semibold text-grayscale-6">(GMT +05:30)</span>
+          </div>
+          <div class="grow sm:flex hidden flex-col text-center space-y-1 sm:border-r border-grayscale-8 md:px-4">
+            <span class="text-sm font-bold text-grayscale-5">ENDS</span>
+            <time datetime="2024-08-02T12:00:00+08:00">Aug  2, 2024, 12:00</time>
+            <span class="text-xs font-semibold text-grayscale-6">(GMT +05:30)</span>
+          </div>
+          <div class="grow flex flex-col text-center space-y-1 border-r border-grayscale-8 md:px-4">
+            <span class="text-sm font-bold text-grayscale-5">TOTAL REWARDS</span>
+            <div class="flex justify-center space-x-1">
+              <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/diamond-86b7f85e637abbe6c069df7a5963adc791506d94f1119b8276d396bfcfcc2b68.svg" />
+              <span>$1,000</span>
+            </div>
+          </div>
+          <div class="grow flex flex-col text-center space-y-1 border-r border-grayscale-8 md:px-4">
+            <span class="text-sm font-bold text-grayscale-5">REWARD AMOUNT</span>
+            <div class="flex justify-center space-x-1">
+              <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/cup-9694fe20e594efc644abb462a178b75715861b762c5c22793335eedf02ea78e2.svg" />
+              <span>$1,000</span>
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:grow lg:flex-col text-center space-y-1 md:px-4">
+            <span class="text-sm font-bold text-grayscale-5">PLAYERS JOINED</span>
+            <div class="flex justify-center space-x-1">
+              <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/person-88ebcbfc25f1a662a43f9b3f0e27ff9a3dba5b13865cc0f8225d6e2f613b1a07.svg" />
+              <span>253 </span>
+            </div>
+          </div>
+        </div>
+        <div class="sm:hidden flex justify-center pt-4 border-t border-grayscale-8">
+          <div class="grow flex flex-col text-center space-y-1 border-r border-grayscale-8 md:px-4">
+            <span class="text-sm font-bold text-grayscale-5">STARTS</span>
+            <time datetime="2024-07-05T12:00:00+08:00">Jul  5, 2024, 12:00</time>
+            <span class="text-xs font-semibold text-grayscale-6">(GMT +05:30)</span>
+          </div>
+          <div class="grow flex flex-col text-center space-y-1 sm:border-r border-grayscale-8 md:px-4">
+            <span class="text-sm font-bold text-grayscale-5">ENDS</span>
+            <time datetime="2024-08-02T12:00:00+08:00">Aug  2, 2024, 12:00</time>
+            <span class="text-xs font-semibold text-grayscale-6">(GMT +05:30)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-y-10">
+
+
+
+          <div class="relative" data-controller="reveal" data-reveal-hidden-class="hidden">
+            <div class="flex lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 flex-col w-full lg:w-11/12">
+              <div class="flex basis-5/6 lg:basis-1/3">
+                <h3 class="text-xl lg:text-3xl font-bold lg:text-grayscale-2 text-grayscale-4">Quest Details</h3>
+              </div>
+              <div class="flex flex-col basis-full lg:basis-2/3" data-reveal-target="item">
+                <div class="flex flex-col gap-y-2">
+                  <h3 class="text-grayscale-2 font-semibold text-lg">Introduction</h3>
+                  <div class="markdown-body"><p><strong>Build the next best Bitcoin-focused DeFi app on ZetaChain</strong> </p>
+
+<p><strong>Developer Resources</strong><br>
+For developers new to ZetaChain, watch our workshop: <strong><a href="https://youtu.be/r5fdZfHxbK0" target="_blank">Intro to ZetaChain: StackUp Summer 2024 Developer Bounty</a></strong> or check out these <strong><a href="https://go.d3v.gg/zeta-resources-hackvirtual" target="_blank">resources</a></strong> specifically curated to help you complete this bounty! </p>
+
+<p><em>ZetaChain is recruiting technical ambassadors! Interested in dev Q&amp;A support, docs/code contributions, live events, screencast tutorials or joining 10,000 other omnichain builders in the Discord Dev Zone?  Learn more and apply now <a href="https://zetachain.deform.cc/ZetaTechLeads" target="_blank">here</a></em></p>
+
+<p><strong>IMPORTANT NOTICE</strong><br>
+Submit your project by <strong>02 August 2024 (12pm SGT)</strong> via <a href="https://go.d3v.gg/vtbounties2024-s2-submission" target="_blank"><strong>this portal</strong></a></p>
+</div>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                  <h3 class="text-grayscale-2 font-semibold text-lg">Deliverables</h3>
+                  <p>This quest has 0 deliverables.</p>
+
+                  <ol class="list-decimal list-inside">
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="absolute cursor-pointer right-0 top-0" data-action="click->reveal#toggle">
+              <svg class="w-6 h-4" data-reveal-target="item" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 8.70711C15.3166 9.09763 14.6834 9.09763 14.2929 8.70711L8 2.41421L1.70711 8.70711C1.31658 9.09763 0.683417 9.09763 0.292893 8.70711C-0.0976314 8.31658 -0.0976313 7.68342 0.292894 7.29289L7.29289 0.292893C7.68342 -0.0976322 8.31658 -0.0976321 8.70711 0.292893L15.7071 7.29289C16.0976 7.68342 16.0976 8.31658 15.7071 8.70711Z" fill="#555555"/>
+              </svg>
+              <svg class="w-6 h-4 hidden" data-reveal-target="item" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L8 6.58579L14.2929 0.292893C14.6834 -0.0976311 15.3166 -0.0976311 15.7071 0.292893C16.0976 0.683417 16.0976 1.31658 15.7071 1.70711L8.70711 8.70711C8.31658 9.09763 7.68342 9.09763 7.29289 8.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#555555"/>
+              </svg>
+            </div>
+          </div>
+
+          <hr class="bg-grayscale-8">
+
+        <div class="flex flex-col gap-y-10">
+
+            <div class="flex flex-col space-y-5 w-full">
+              <div class="flex basis-5/6 lg:basis-1/3">
+                <h3 class="text-xl font-bold lg:text-grayscale-2 text-grayscale-4">This quest is part of a campaign so do check out other quests!</h3>
+              </div>
+              <div class="flex flex-col basis-full lg:basis-2/3">
+                <a class="inline-flex items-center gap-x-4 rounded-md border border-grayscale-2 text-xl font-semibold px-4 py-2 lg:w-max lg:max-w-96 w-full justify-center hover:bg-grayscale-8" target="blank" data-turbo="false" href="/campaigns/hackglobal-2024-virtual-bounty-season-2">
+                  <span class="text-grayscale-2 text-base">More Quests</span>
+                  <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/arrow-black-icon-0a41cc2911b2066c8701b736242282b8c42a8555aeb541de919c5f2a97a83f0f.svg" />
+</a>              </div>
+            </div>
+            <hr class="bg-grayscale-8">
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-4 items-center lg:items-start pb-6">
+        <div class="flex space-x-3">
+  <img alt="Help Center" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/help-center-black-8c4522ccef90d19bfcad0cd68a06884dddd2cc2c75bbb3500f4e4ec494640cdf.svg" />
+  <span class="font-semibold">Need help?</span>
+</div>
+<p class="text-sm text-center">Find articles to support you through your journey or chat with our support team.</p>
+<a target="_blank" class="cursor-pointer rounded-lg border border-grayscale-2 px-6 py-2 flex items-center justify-center space-x-2" href="https://stackuphelpcentre.zendesk.com/hc/en-us">
+  <span class="font-semibold">Help Center</span>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.4398 6.23982H5.27979V18.7198H17.7598V10.5598M19.6798 4.31982L10.0798 13.9198" stroke="#101112" stroke-width="1.2"/>
+    <path d="M15.3599 4.31982H19.6799V8.63982" stroke="#101112" stroke-width="1.2"/>
+  </svg>
+</a>
+      </div>
+    </div>
+
+    <template data-tooltip-target="template">
+      <div class="hidden sm:block absolute mx-2 -top-[10px] left-[102px] bg-grayscale-2 rounded-lg text-white p-2 z-50 w-max max-w-[280px]" data-tooltip-target="tooltip">
+        <svg class="absolute -left-36 top-4 w-full rotate-[270deg]" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 9L8.19358 0L0 9H16Z" fill="#333"/>
+        </svg>
+        <span class="line-clamp-2" data-tooltip-target="message"></span>
+      </div>
+    </template>
+  </div>
+</turbo-frame>
+<a href="#top" data-controller="back-to-top scroll-to" data-scroll-to-behavior-value="smooth" class="fixed bottom-20 right-5 sm:right-10 xl:right-20 opacity-0 transform translate-y-5 transition-opacity duration-300 flex items-center bg-[#B8B8B8] rounded-md py-2 pl-2 pr-2 sm:pr-4 gap-x-1 hover:bg-grayscale-5 active:bg-grayscale-2 cursor-pointer">
+  <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/top-white-icon-e69da5f6275f1a4369c700daedf4aed388d60d4ef84e00e43560e89f818a71fe.svg" />
+  <div class="hidden sm:block text-white font-semibold">Top</div>
+</a>
+
+
+          </main>
+        </div>
+      </div>
+
+      <turbo-frame id="learners_earn_profile_new"></turbo-frame>
+    </div>
+
+    <turbo-frame id="flash"></turbo-frame>
+
+    <turbo-frame id="modal"></turbo-frame>
+
+    <template data-inline-flash-target="template">
+  <div data-inline-flash-target="item" data-render-target="root" class="flex flex-row right-0 z-30 p-4 w-full min-h-[60px] items-center">
+    <div data-render-target="icon"></div>
+    <div class="flex flex-col w-full ml-4 font-semibold" data-render-target="message"></div>
+    <img alt="error-check" data-action="click-&gt;inline-flash#clear" class="flex order-1 cursor-pointer" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/cross-black-icon-d9634c256cd468596bca7e639467bf1b65fbfe5d177731a7ab37d2496fa7b850.svg" />
+  </div>
+
+  <div data-render-variant="success" data-render-to="root" class="bg-flash-success-surface border-b border-flash-success-surface text-flash-success-text font-semibold"></div>
+  <div data-render-variant="success" data-render-to="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+    </svg>
+  </div>
+
+  <div data-render-variant="error" data-render-to="root" class="bg-flash-danger-surface border-b border-flash-danger-border text-flash-danger-text font-semibold"></div>
+  <div data-render-variant="error" data-render-to="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/>
+    </svg>
+  </div>
+
+  <div data-render-variant="notice" data-render-to="root" class="bg-primary-8"></div>
+  <div data-render-variant="notice" data-render-to="icon">
+    <img alt="check" src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/circle-check-green-f2ce2cbbf667281138058da53e607f059d0ed75dfc1fa1c39408782afcbb7ea7.svg" />
+  </div>
+</template>
+
+
+    <footer class="py-4 sm:py-6 lg:py-8 pl-0 md:pl-20">
+      <div class="w-full sm:px-7 lg:px-10 flex flex-col sm:flex-row space-y-8 sm:space-y-0 justify-between items-center sm:items-end">
+        <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 items-center sm:items-start lg:items-center text-sm">
+          <div class="flex justify-center text-base text-grayscale-5">
+            <p>© <time datetime="2024-07-16T00:00:00+05:30">2024</time> Earn by StackUp</p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center sm:justify-center gap-y-3 sm:space-x-6 font-semibold text-grayscale-2">
+            <a target="_blank" href="https://stackuphelpcentre.zendesk.com/hc/en-us">
+              <span class="hover:underline">Help Centre</span>
+</a>            <a target="_blank" href="https://stackup.dev/earn/terms">
+              <span class="hover:underline">Terms of Service</span>
+</a>            <a target="_blank" href="https://stackup.dev/privacy">
+              <span class="hover:underline">Privacy Policy</span>
+</a>          </div>
+        </div>
+
+        <div class="flex justify-center space-x-4">
+          <a class="fill-grayscale-6 hover:fill-grayscale-4" target="_blank" href="https://twitter.com/StackUpHQ">
+            <svg class="fill-inherit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6468 10.4686L20.9321 2H19.2057L12.8799 9.3532L7.82741 2H2L9.6403 13.1193L2 22H3.72649L10.4068 14.2348L15.7425 22H21.57L13.6468 10.4686ZM11.2821 13.2173L10.508 12.1101L4.34857 3.29968H7.00037L11.9711 10.4099L12.7452 11.5172L19.2066 20.7594H16.5548L11.2821 13.2173Z"/>
+            </svg>
+</a>          <a class="fill-grayscale-6 hover:fill-grayscale-4" target="_blank" href="https://discord.gg/3x3h2z6A63">
+            <svg class="fill-inherit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3303 4.52336C18.7535 3.80145 17.0888 3.2893 15.3789 3C15.1449 3.41829 14.9332 3.84865 14.7446 4.28928C12.9232 4.01482 11.071 4.01482 9.24961 4.28928C9.06095 3.84869 8.84924 3.41834 8.61535 3C6.90433 3.29174 5.2386 3.80511 3.66019 4.52713C0.526644 9.16327 -0.322811 13.6843 0.101917 18.1411C1.937 19.4969 3.99098 20.5281 6.17458 21.1897C6.66626 20.5284 7.10134 19.8268 7.47519 19.0925C6.76511 18.8273 6.07975 18.5001 5.42706 18.1146C5.59884 17.9901 5.76684 17.8617 5.92918 17.7371C7.82837 18.6303 9.90124 19.0933 12 19.0933C14.0987 19.0933 16.1715 18.6303 18.0707 17.7371C18.235 17.8711 18.403 17.9995 18.5729 18.1146C17.9189 18.5007 17.2323 18.8285 16.5209 19.0944C16.8943 19.8284 17.3294 20.5293 17.8216 21.1897C20.007 20.5307 22.0626 19.5001 23.898 18.143C24.3963 12.9745 23.0467 8.49503 20.3303 4.52336ZM8.01318 15.4002C6.82961 15.4002 5.85179 14.3261 5.85179 13.0047C5.85179 11.6833 6.79563 10.5998 8.0094 10.5998C9.22318 10.5998 10.1934 11.6833 10.1727 13.0047C10.1519 14.3261 9.21941 15.4002 8.01318 15.4002ZM15.9867 15.4002C14.8013 15.4002 13.8272 14.3261 13.8272 13.0047C13.8272 11.6833 14.7711 10.5998 15.9867 10.5998C17.2024 10.5998 18.1651 11.6833 18.1444 13.0047C18.1236 14.3261 17.193 15.4002 15.9867 15.4002Z"/>
+            </svg>
+</a>          <a class="fill-grayscale-6 hover:fill-grayscale-4" target="_blank" href="https://www.linkedin.com/company/stackupofficial/">
+            <svg class="fill-inherit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.15 4.08333C6.15 5.23417 5.225 6.16667 4.08333 6.16667C2.94167 6.16667 2.01667 5.23417 2.01667 4.08333C2.01667 2.93333 2.94167 2 4.08333 2C5.225 2 6.15 2.93333 6.15 4.08333ZM6.16667 7.83333H2V21.1667H6.16667V7.83333ZM12.8183 7.83333H8.67833V21.1667H12.8192V14.1675C12.8192 10.2758 17.8433 9.9575 17.8433 14.1675V21.1667H22V12.7242C22 6.1575 14.565 6.39667 12.8183 9.62917V7.83333Z"/>
+            </svg>
+</a>        </div>
+      </div>
+    </footer>
+    <script src="/javascript/toggle.js"></script>
+  </body>
+</html>
