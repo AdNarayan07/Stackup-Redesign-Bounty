@@ -116,6 +116,7 @@ app.listen(3000, () => {
     highlightPostTag: '</span>',
     removeWordsIfNoResults: 'lastWords'
   }
+  const synonyms = require("./data/algolia_synonyms.json")
   try {
     const client = algoliasearch("TZQKXVG59T", "96b92a7c61b26f26a9c20d9e81b4d90f");
     const index_campaigns = client.initIndex("_campaigns");
@@ -128,6 +129,7 @@ app.listen(3000, () => {
     })
     const records_campaigns = require("./data/campaigns_structured");
     await index_campaigns.saveObjects(records_campaigns, { autoGenerateObjectIDIfNotExist: false });
+    await index_campaigns.saveSynonyms(synonyms, { replaceExistingSynonyms: true })
 
     const index_learn_pathways = client.initIndex("_learn_pathways");
     await index_learn_pathways.setSettings({
@@ -141,6 +143,7 @@ app.listen(3000, () => {
     })
     const records_learn_pathways = require("./data/learn_pathways_structured.json");
     await index_learn_pathways.saveObjects(records_learn_pathways, { autoGenerateObjectIDIfNotExist: false });
+    await index_learn_pathways.saveSynonyms(synonyms, { replaceExistingSynonyms: true })
   } catch (error) {
     console.error('Error in Algolia indexing:', error);
   }
