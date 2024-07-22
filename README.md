@@ -1,6 +1,6 @@
 # StackUp Website Redesign
 
-**Check Out the Website: 👉 https://stackup-redesign-bounty.onrender.com/**(It might take some time to load first due to render marking it as inactive.)
+**Check Out the Website: 👉 https://stackup-redesign-bounty.onrender.com/** (It might take some time to load first due to render marking it as inactive.)
 
 In this project I have tried to redesign and add some features to the [StackUp Learn & Earn Platform](http://earn.stackup.dev/).
 These are the added features:
