@@ -61,7 +61,7 @@ For **[learn pathways data](/data/learn_pathways_structured.json)**, a `content`
 ### Filtering the Quests
 It is helpful in **[My Progress](https://stackup-redesign-bounty.onrender.com/my/journeys/quests)** if we can filter out the past quests based on whether it's rewarded, approved, rejected, etc.
 
-The **[Quest Records Part](/pages/my/journey/quests.html#L528-L571)** contains 2 `<div>`'s to toggle between past and ongoing content, a filter div containing `<a>` tags with different status params and `<div>`'s to display the data.
+The **[Quest Records Part](/pages/my/journeys/quests.html#L528-L571)** contains 2 `<div>`'s to toggle between past and ongoing content, a filter div containing `<a>` tags with different status params and `<div>`'s to display the data.
 
 Script **[filter.js](/public/javascript/filter.js)** contains functions to fetch the data from server and display it in the webpage. The **[server filters out data](/app.js#L48-L74)** based on "status" parameter and page.
 
