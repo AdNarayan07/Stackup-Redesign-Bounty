@@ -68,4 +68,4 @@ Script **[filter.js](/public/javascript/filter.js)** contains functions to fetch
 Stylesheet **[filter.css](/public/styles/filter.css)** shows filter button when "past" quests are selected and shows filter options when hovered over. It also shows content based on which tab is active.
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lCZO7EONduI?si=YD64wRZCszsHzrX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Video Title](https://img.youtube.com/vi/lCZO7EONduI/0.jpg)](https://www.youtube.com/watch?v=lCZO7EONduI)
