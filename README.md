@@ -66,3 +66,6 @@ The **[Quest Records Part](/pages/my/journeys/quests.html#L528-L571)** contains 
 Script **[filter.js](/public/javascript/filter.js)** contains functions to fetch the data from server and display it in the webpage. The **[server filters out data](/app.js#L48-L74)** based on "status" parameter and page.
 
 Stylesheet **[filter.css](/public/styles/filter.css)** shows filter button when "past" quests are selected and shows filter options when hovered over. It also shows content based on which tab is active.
+
+## Video Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lCZO7EONduI?si=YD64wRZCszsHzrX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
