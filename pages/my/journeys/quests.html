@@ -524,12 +524,14 @@
 
 <section class="pb-10">
   <h4 class="text-grayscale-2 font-bold mb-4 text-xl">Quest Records</h4>
+
+  <!--toggle and filter elements-->
   <div class="bg-white shadow-lg rounded-lg">
     <div class="flex space-x-2 mb-4 items-center">
       <div id="ongoing" checked class="toggle-option active px-6 py-3 shadow-md font-bold">Ongoing</div>
       <div id="past" class="toggle-option px-6 py-3 shadow-md font-bold">Past</div>
       <div id="filter" class="hidden relative">
-      <button checked="false" class="items-center px-4 py-2 rounded-full text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500">
+      <button class="items-center px-4 py-2 rounded-full text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500">
         <svg height="20" viewBox="0 0 1792 1792" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M1595 295q17 41-14 70l-493 493v742q0 42-39 59-13 5-25 5-27 0-45-19l-256-256q-19-19-19-45v-486l-493-493q-31-29-14-70 17-39 59-39h1280q42 0 59 39z" fill="#ffffff"/></svg>
       </button>
       <div class="absolute w-48 bg-white rounded-md shadow-lg z-10 hidden group-focus:block">
@@ -557,10 +559,12 @@
     </div>
   </div>
     </div>
-    <ul id="content-ongoing" class="space-y-4 hidden"></ul>
-    <div id="content-past" class="hidden">
+    <!--toggle and filter elements-->
+
+    <ul id="content-ongoing" class="space-y-4 hidden"></ul> <!--ongoing contents list -->
+    <div id="content-past" class="hidden"> <!--past contents list -->
       <ul class="space-y-4"></ul>
-      <a id="next_page" class="flex space-x-2 max-w-6xl mx-auto justify-center w-full cursor-pointer mt-10" data="2">
+      <a id="load_more" class="flex space-x-2 max-w-6xl mx-auto justify-center w-full cursor-pointer mt-10" data="2"> <!--loadmore button-->
               <p class="font-semibold">Load More</p>
               <img src="/proxy?src=https://rnd-devops-app-infra-prod-static-assets.sgp1.digitaloceanspaces.com/tribex/learn-and-earn-web:0.1-ea5c58199a9a35d09cd422250eb51cab1e24a290/assets/icons/chevron-down-44a9540617679da48ef177cf1f6df8a9015c8d62206ed67c15e102c4edc37e19.svg">
       </a>

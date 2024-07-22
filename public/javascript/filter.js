@@ -1,12 +1,11 @@
-initializePage()
-async function initializePage() {
+async function run() {
     const params = new URLSearchParams(new URL(document.URL).search);
     const status = params.get("status");
-    const nextPageBtn = document.getElementById("next_page");
+    const loadMoreBtn = document.getElementById("load_more");
     const ongoingBtn = document.getElementById("ongoing");
     const pastBtn = document.getElementById("past");
 
-    nextPageBtn.addEventListener("click", async (e) => {
+    loadMoreBtn.addEventListener("click", async (e) => {
         let target = e.currentTarget;
         let next_page = target.getAttribute("data");
         target.setAttribute("data", parseInt(next_page) + 1);
@@ -30,26 +29,27 @@ async function initializePage() {
 }
 
 async function show_data(status) {
-    const nextPageBtn = document.getElementById("next_page");
+    const loadMoreBtn = document.getElementById("load_more");
     const pastBtn = document.getElementById("past");
     const ongoingBtn = document.getElementById("ongoing");
 
     if (status) {
         pastBtn.setAttribute("checked", "checked");
         ongoingBtn.removeAttribute("checked");
-    }
+    } //show past content if url params contains status to filter
 
     let [ongoing_res, past_res] = await Promise.all([
         fetch("/quests/ongoing"),
         fetch(`/quests/past?status=${status || ""}`)
-    ]);
+    ]); //fetching ongoing and past content from server
 
     let ongoing_content = await ongoing_res.json();
-    document.getElementById("content-ongoing").innerHTML = ongoing_content.join("");
+    document.getElementById("content-ongoing").innerHTML = ongoing_content.join(""); //inserting the ongoing list into document
 
-    if (past_res.headers.get("hasMore") === "false") nextPageBtn.style.display = "none";
+    if (past_res.headers.get("hasMore") === "false") loadMoreBtn.style.display = "none"; //hiding load more button if there is no more content
 
     let past_content = await past_res.json();
-    document.querySelector("#content-past > ul").innerHTML = "";
-    past_content.forEach(e => document.querySelector("#content-past > ul").innerHTML += e.content);
+    document.querySelector("#content-past > ul").innerHTML = ""; //clearing div
+    past_content.forEach(e => document.querySelector("#content-past > ul").innerHTML += e.content); //insereting past list
 }
+run()

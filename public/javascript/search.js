@@ -1,13 +1,14 @@
 document.getElementById("search_toggle").addEventListener("click", () => {
     document.getElementById("search_container").classList.toggle("hidden")
     document.getElementById("searchInput").focus()
-})
+}) //showing-hiding the search box
+
 document.getElementById("searchInput").addEventListener("input", async (e) => {
     const client = algoliasearch('TZQKXVG59T', '704cb579c46c81c78e38de711a246b8d');
     const index = client.initIndex(new URL(document.URL).pathname.replaceAll("/", "_"));
     const query = e.target.value;
-    const { hits } = await index.search(query);
-    displayResults(hits);
+    const { hits } = await index.search(query); //searching for query
+    displayResults(hits); //displaying search results
 });
 
 function displayResults(results) {
