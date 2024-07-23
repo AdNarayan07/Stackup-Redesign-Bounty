@@ -42,6 +42,8 @@ Main entry point to serve pages, listening to routes and indexing data for algol
 ### Dark Theme
 Added Dark UI Theme for whole website, makes it easier to read in dark.
 
+![Illustration - Dark theme](https://svgshare.com/i/18Va.svg)
+
 The file **[dark.css](/public/styles/dark.css)** contains css styling for different classes when the `<html>` tag has ".dark" class. It changes colours fitting for dark mode.
 
 The **[toggle button](/index.html#L311-L327)** is added to every html file styled by **[toggle-button.css](/public/styles/toggle-button.css)**. The script **[toggle.js](public/javascript/toggle.js)** changes the theme by toggling ".dark" class of `<html>` tag when button is clicked. It also saves the preference in `localStorage` and applies saved theme when navigating through pages or when reloading.
@@ -50,6 +52,8 @@ In **[some parts](/index.html#L391-L395)**, the `<img>` tags having `.svg` sourc
 
 ### Search Feature
 Searching for a particular campaign or pathway is made easier with the search feature included. It uses **[algolia](https://www.algolia.com/)** indexing for easy searching.
+
+![Illustration - Search](https://svgshare.com/i/18WJ.svg)
 
 The **[campaign_structured.json](/data/campaigns_structured.json)** and **[learn_pathways_structured.json](/data/learn_pathways_structured.json)** files acts as databases and contains information about all the campaigns and pathways respectively. On starting the app, the **[data is fed into algolia indexing](/app.js#L101-L145)** along with synonyms (so that abbreviations are also counted when searching) and other settings. In production, however, the data should be fed along with the addition of a new content (campaign or pathway).
 
@@ -60,6 +64,8 @@ For **[learn pathways data](/data/learn_pathways_structured.json)**, a `content`
 
 ### Filtering the Quests
 It is helpful in **[My Progress](https://stackup-redesign-bounty.onrender.com/my/journeys/quests)** if we can filter out the past quests based on whether it's rewarded, approved, rejected, etc.
+
+![Illustration - Filter](https://svgshare.com/i/18Z6.svg)
 
 The **[Quest Records Part](/pages/my/journeys/quests.html#L528-L571)** contains 2 `<div>`'s to toggle between past and ongoing content, a filter div containing `<a>` tags with different status params and `<div>`'s to display the data.
 
