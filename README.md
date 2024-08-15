@@ -42,7 +42,7 @@ Main entry point to serve pages, listening to routes and indexing data for algol
 ### Dark Theme
 Added Dark UI Theme for whole website, makes it easier to read in dark.
 
-![Illustration - Dark theme](https://cdn.discordapp.com/attachments/1156217464225546330/1265335473681858600/illustration-1.svg?ex=66a122fd&is=669fd17d&hm=51506d8ec8922e1b563e71825d3e50bb43bd4937d2ae53d394dee9422a074d8d&)
+![Illustration - Dark theme](https://cdn.discordapp.com/attachments/1156217464225546330/1265335473681858600/illustration-1.svg?ex=66bf757d&is=66be23fd&hm=1b7951b4138b49201ef49e8520d1c8270fb1a2237ad97cb2584317a1e385c999&)
 
 The file **[dark.css](/public/styles/dark.css)** contains css styling for different classes when the `<html>` tag has ".dark" class. It changes colours fitting for dark mode.
 
@@ -53,7 +53,7 @@ In **[some parts](/index.html#L391-L395)**, the `<img>` tags having `.svg` sourc
 ### Search Feature
 Searching for a particular campaign or pathway is made easier with the search feature included. It uses **[algolia](https://www.algolia.com/)** indexing for easy searching.
 
-![Illustration - Search](https://cdn.discordapp.com/attachments/1156217464225546330/1265335474029858836/illustration-2.svg?ex=66a122fd&is=669fd17d&hm=abcc9a21eeab9a20f4a633eaeb809cc7a3ca7a09fc218cd1f56767ac349cde5d&)
+![Illustration - Search](https://cdn.discordapp.com/attachments/1156217464225546330/1265335474029858836/illustration-2.svg?ex=66bf757d&is=66be23fd&hm=2487f80ab7b87481f2dfdcae9413497e8829b73bb8ed90f14fac50831afcb7b3&)
 
 The **[campaign_structured.json](/data/campaigns_structured.json)** and **[learn_pathways_structured.json](/data/learn_pathways_structured.json)** files acts as databases and contains information about all the campaigns and pathways respectively. On starting the app, the **[data is fed into algolia indexing](/app.js#L101-L145)** along with synonyms (so that abbreviations are also counted when searching) and other settings. In production, however, the data should be fed along with the addition of a new content (campaign or pathway).
 
@@ -65,7 +65,7 @@ For **[learn pathways data](/data/learn_pathways_structured.json)**, a `content`
 ### Filtering the Quests
 It is helpful in **[My Progress](https://stackup-redesign-bounty.onrender.com/my/journeys/quests)** if we can filter out the past quests based on whether it's rewarded, approved, rejected, etc.
 
-![Illustration - Filter](https://cdn.discordapp.com/attachments/1156217464225546330/1265335474285842522/illustration-3.svg?ex=66a122fd&is=669fd17d&hm=7825e5831769e155631443ad0dab868389fc81360d9fce75f250470fab873955&)
+![Illustration - Filter](https://cdn.discordapp.com/attachments/1156217464225546330/1265335474285842522/illustration-3.svg?ex=66bf757d&is=66be23fd&hm=63558ae5f31b5c742a4b80b0d1b8c5cd94fca563943d158d49f59a5a3c347695&)
 
 The **[Quest Records Part](/pages/my/journeys/quests.html#L528-L571)** contains 2 `<div>`'s to toggle between past and ongoing content, a filter div containing `<a>` tags with different status params and `<div>`'s to display the data.
 
